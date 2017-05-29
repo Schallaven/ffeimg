@@ -1,0 +1,1539 @@
+2016-10-12 16:10:49,404	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:10:49,404	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:10:49,405	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0001.FFE.png'.
+2016-10-12 16:10:49,407	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:10:49,990	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:10:49,992	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:10:49,993	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:10:49,994	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0001.FFE.png' was updated.
+2016-10-12 16:10:50,573	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:10:50,575	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0001.FFE.png'
+2016-10-12 16:10:50,578	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:10:50,650	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:10:50,651	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:10:50,651	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:10:50,651	findfeatures.py	INFO	287	Found 13 contours
+2016-10-12 16:10:50,651	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:10:50,651	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:10:50,651	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:10:50,651	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:10:50,651	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:10:50,653	ffe.py	INFO	537	Contour 3 is a candidate for the separation zone. Area of contour: 161120.00
+2016-10-12 16:10:50,653	ffe.py	INFO	555	Found child 6 with area of 143746.50. Ratio: 0.90
+2016-10-12 16:10:50,653	ffe.py	INFO	560	Child is in ratio range: 0.85 <= 0.90 <= 0.95
+2016-10-12 16:10:50,653	findfeatures.py	INFO	321	Found a matching contour pair (3, 6) for the separation zone
+2016-10-12 16:10:50,653	findfeatures.py	INFO	324	Refining the contours.
+2016-10-12 16:10:50,654	findfeatures.py	INFO	384	Did not look for flow markers (--skip-flowmarkers given).
+2016-10-12 16:10:50,655	findfeatures.py	INFO	413	Saved coordinates in file.
+2016-10-12 16:10:50,655	findfeatures.py	INFO	425	Finding features ended on 'mix1/out0001.FFE.png'
+2016-10-12 16:10:50,655	findfeatures.py	INFO	426	####### Find features end #######
+2016-10-12 16:10:51,296	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:10:51,298	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0001.FFE.png'
+2016-10-12 16:10:51,301	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:10:51,377	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:10:51,378	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:10:51,380	findtrajectories.py	INFO	340	Extracted zone (450x333) from image (640x480)
+2016-10-12 16:10:51,380	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:10:51,380	findtrajectories.py	INFO	369	Resolution of image is 0.14 x 0.14 mm² per pixel²
+2016-10-12 16:10:51,381	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:10:51,381	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:10:51,381	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:10:51,953	findtrajectories.py	INFO	460	3 trajectories were found in file.
+2016-10-12 16:10:51,953	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:10:51,954	findtrajectories.py	INFO	482	2 of 3 trajectories were removed. 1 remain.
+2016-10-12 16:10:51,957	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:10:51,957	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0001.FFE.png'
+2016-10-12 16:10:51,957	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:10:52,598	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:10:52,599	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0001.FFE.png'
+2016-10-12 16:10:53,039	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:10:53,132	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0001.FFE.result.png.
+2016-10-12 16:10:53,132	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:10:53,793	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:10:53,796	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:10:53,796	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0002.FFE.png'.
+2016-10-12 16:10:53,796	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:10:54,380	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:10:54,381	pngdata.py	INFO	165	Open and read file 'mix1/out0002.FFE.png'
+2016-10-12 16:10:54,381	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:10:54,384	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0002.FFE.png' was updated.
+2016-10-12 16:10:54,966	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:10:54,967	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0002.FFE.png'
+2016-10-12 16:10:54,970	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:10:55,042	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:10:55,042	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:10:55,043	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:10:55,046	findfeatures.py	INFO	287	Found 18 contours
+2016-10-12 16:10:55,048	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:10:55,049	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:10:55,052	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:10:55,052	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:10:55,052	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:10:55,052	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:10:55,052	ffe.py	INFO	537	Contour 4 is a candidate for the separation zone. Area of contour: 161615.00
+2016-10-12 16:10:55,055	ffe.py	INFO	555	Found child 10 with area of 143456.50. Ratio: 0.90
+2016-10-12 16:10:55,058	ffe.py	INFO	560	Child is in ratio range: 0.85 <= 0.90 <= 0.95
+2016-10-12 16:10:55,061	findfeatures.py	INFO	321	Found a matching contour pair (4, 10) for the separation zone
+2016-10-12 16:10:55,062	findfeatures.py	INFO	324	Refining the contours.
+2016-10-12 16:10:55,065	findfeatures.py	INFO	384	Did not look for flow markers (--skip-flowmarkers given).
+2016-10-12 16:10:55,069	findfeatures.py	INFO	413	Saved coordinates in file.
+2016-10-12 16:10:55,069	findfeatures.py	INFO	425	Finding features ended on 'mix1/out0002.FFE.png'
+2016-10-12 16:10:55,072	findfeatures.py	INFO	426	####### Find features end #######
+2016-10-12 16:10:55,711	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:10:55,713	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0002.FFE.png'
+2016-10-12 16:10:55,717	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:10:55,792	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:10:55,792	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:10:55,795	findtrajectories.py	INFO	340	Extracted zone (448x328) from image (640x480)
+2016-10-12 16:10:55,795	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:10:55,796	findtrajectories.py	INFO	369	Resolution of image is 0.15 x 0.15 mm² per pixel²
+2016-10-12 16:10:55,799	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:10:55,802	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:10:55,805	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:10:56,369	findtrajectories.py	INFO	460	3 trajectories were found in file.
+2016-10-12 16:10:56,369	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:10:56,371	findtrajectories.py	INFO	482	2 of 3 trajectories were removed. 1 remain.
+2016-10-12 16:10:56,375	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:10:56,375	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0002.FFE.png'
+2016-10-12 16:10:56,378	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:10:57,017	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:10:57,019	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0002.FFE.png'
+2016-10-12 16:10:57,460	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:10:57,551	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0002.FFE.result.png.
+2016-10-12 16:10:57,551	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:10:58,239	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:10:58,240	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:10:58,240	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0003.FFE.png'.
+2016-10-12 16:10:58,242	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:10:58,822	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:10:58,825	pngdata.py	INFO	165	Open and read file 'mix1/out0003.FFE.png'
+2016-10-12 16:10:58,825	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:10:58,829	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0003.FFE.png' was updated.
+2016-10-12 16:10:59,407	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:10:59,408	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0003.FFE.png'
+2016-10-12 16:10:59,414	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:10:59,484	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:10:59,484	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:10:59,486	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:10:59,487	findfeatures.py	INFO	287	Found 17 contours
+2016-10-12 16:10:59,490	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:10:59,493	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:10:59,494	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:10:59,494	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:10:59,496	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:10:59,496	ffe.py	INFO	537	Contour 3 is a candidate for the separation zone. Area of contour: 161554.00
+2016-10-12 16:10:59,497	ffe.py	INFO	555	Found child 10 with area of 143083.00. Ratio: 0.90
+2016-10-12 16:10:59,500	ffe.py	INFO	560	Child is in ratio range: 0.85 <= 0.90 <= 0.95
+2016-10-12 16:10:59,503	findfeatures.py	INFO	321	Found a matching contour pair (3, 10) for the separation zone
+2016-10-12 16:10:59,505	findfeatures.py	INFO	324	Refining the contours.
+2016-10-12 16:10:59,507	findfeatures.py	INFO	384	Did not look for flow markers (--skip-flowmarkers given).
+2016-10-12 16:10:59,513	findfeatures.py	INFO	413	Saved coordinates in file.
+2016-10-12 16:10:59,513	findfeatures.py	INFO	425	Finding features ended on 'mix1/out0003.FFE.png'
+2016-10-12 16:10:59,515	findfeatures.py	INFO	426	####### Find features end #######
+2016-10-12 16:11:00,164	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:11:00,165	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0003.FFE.png'
+2016-10-12 16:11:00,170	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:11:00,243	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:11:00,244	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:11:00,246	findtrajectories.py	INFO	340	Extracted zone (449x328) from image (640x480)
+2016-10-12 16:11:00,246	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:11:00,246	findtrajectories.py	INFO	369	Resolution of image is 0.14 x 0.15 mm² per pixel²
+2016-10-12 16:11:00,247	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:11:00,247	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:11:00,249	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:11:00,822	findtrajectories.py	INFO	460	3 trajectories were found in file.
+2016-10-12 16:11:00,822	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:11:00,822	findtrajectories.py	INFO	482	2 of 3 trajectories were removed. 1 remain.
+2016-10-12 16:11:00,825	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:11:00,825	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0003.FFE.png'
+2016-10-12 16:11:00,825	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:11:01,466	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:11:01,467	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0003.FFE.png'
+2016-10-12 16:11:01,918	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:11:02,013	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0003.FFE.result.png.
+2016-10-12 16:11:02,013	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:11:02,674	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:02,676	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:11:02,677	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0004.FFE.png'.
+2016-10-12 16:11:02,677	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:11:03,288	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:03,289	pngdata.py	INFO	165	Open and read file 'mix1/out0004.FFE.png'
+2016-10-12 16:11:03,289	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:11:03,292	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0004.FFE.png' was updated.
+2016-10-12 16:11:03,884	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:11:03,884	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0004.FFE.png'
+2016-10-12 16:11:03,888	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:11:03,961	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:11:03,963	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:11:03,963	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:11:03,963	findfeatures.py	INFO	287	Found 37 contours
+2016-10-12 16:11:03,963	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:11:03,964	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:11:03,964	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:11:03,964	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:11:03,964	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:11:03,964	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:11:03,964	ffe.py	INFO	537	Contour 4 is a candidate for the separation zone. Area of contour: 161681.50
+2016-10-12 16:11:03,964	ffe.py	INFO	555	Found child 27 with area of 138796.50. Ratio: 0.90
+2016-10-12 16:11:03,964	ffe.py	INFO	560	Child is in ratio range: 0.85 <= 0.90 <= 0.95
+2016-10-12 16:11:03,964	findfeatures.py	INFO	321	Found a matching contour pair (4, 27) for the separation zone
+2016-10-12 16:11:03,966	findfeatures.py	INFO	324	Refining the contours.
+2016-10-12 16:11:03,966	findfeatures.py	INFO	384	Did not look for flow markers (--skip-flowmarkers given).
+2016-10-12 16:11:03,969	findfeatures.py	INFO	413	Saved coordinates in file.
+2016-10-12 16:11:03,969	findfeatures.py	INFO	425	Finding features ended on 'mix1/out0004.FFE.png'
+2016-10-12 16:11:03,969	findfeatures.py	INFO	426	####### Find features end #######
+2016-10-12 16:11:04,640	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:11:04,641	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0004.FFE.png'
+2016-10-12 16:11:04,645	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:11:04,723	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:11:04,724	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:11:04,726	findtrajectories.py	INFO	340	Extracted zone (448x333) from image (640x480)
+2016-10-12 16:11:04,726	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:11:04,726	findtrajectories.py	INFO	369	Resolution of image is 0.15 x 0.14 mm² per pixel²
+2016-10-12 16:11:04,726	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:11:04,727	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:11:04,729	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:11:05,706	findtrajectories.py	INFO	460	4 trajectories were found in file.
+2016-10-12 16:11:05,706	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:11:05,706	findtrajectories.py	INFO	482	2 of 4 trajectories were removed. 2 remain.
+2016-10-12 16:11:05,709	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:11:05,710	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0004.FFE.png'
+2016-10-12 16:11:05,710	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:11:06,392	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:11:06,394	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0004.FFE.png'
+2016-10-12 16:11:06,845	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:11:06,851	rendertrajectories.py	INFO	356	Linear rendering of trajectory 2...
+2016-10-12 16:11:06,947	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0004.FFE.result.png.
+2016-10-12 16:11:06,947	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:11:07,658	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:07,660	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:11:07,661	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0005.FFE.png'.
+2016-10-12 16:11:07,661	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:11:08,256	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:08,256	pngdata.py	INFO	165	Open and read file 'mix1/out0005.FFE.png'
+2016-10-12 16:11:08,257	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:11:08,260	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0005.FFE.png' was updated.
+2016-10-12 16:11:08,891	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:11:08,892	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0005.FFE.png'
+2016-10-12 16:11:08,897	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:11:08,980	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:11:08,980	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:11:08,982	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:11:08,982	findfeatures.py	INFO	287	Found 34 contours
+2016-10-12 16:11:08,983	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:11:08,983	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:11:08,983	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:11:08,983	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:11:08,983	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:11:08,983	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:11:08,983	ffe.py	DEBUG	523	Contour 4 has no children
+2016-10-12 16:11:08,983	ffe.py	DEBUG	523	Contour 5 has no children
+2016-10-12 16:11:08,983	ffe.py	INFO	537	Contour 6 is a candidate for the separation zone. Area of contour: 161877.50
+2016-10-12 16:11:08,983	ffe.py	INFO	555	Found child 23 with area of 138344.00. Ratio: 0.90
+2016-10-12 16:11:08,983	ffe.py	INFO	560	Child is in ratio range: 0.85 <= 0.90 <= 0.95
+2016-10-12 16:11:08,983	findfeatures.py	INFO	321	Found a matching contour pair (6, 23) for the separation zone
+2016-10-12 16:11:08,983	findfeatures.py	INFO	324	Refining the contours.
+2016-10-12 16:11:08,983	findfeatures.py	INFO	384	Did not look for flow markers (--skip-flowmarkers given).
+2016-10-12 16:11:08,986	findfeatures.py	INFO	413	Saved coordinates in file.
+2016-10-12 16:11:08,986	findfeatures.py	INFO	425	Finding features ended on 'mix1/out0005.FFE.png'
+2016-10-12 16:11:08,986	findfeatures.py	INFO	426	####### Find features end #######
+2016-10-12 16:11:09,648	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:11:09,648	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0005.FFE.png'
+2016-10-12 16:11:09,653	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:11:09,727	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:11:09,729	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:11:09,730	findtrajectories.py	INFO	340	Extracted zone (448x333) from image (640x480)
+2016-10-12 16:11:09,730	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:11:09,730	findtrajectories.py	INFO	369	Resolution of image is 0.15 x 0.14 mm² per pixel²
+2016-10-12 16:11:09,730	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:11:09,730	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:11:09,732	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:11:10,390	findtrajectories.py	INFO	460	3 trajectories were found in file.
+2016-10-12 16:11:10,390	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:11:10,390	findtrajectories.py	INFO	482	1 of 3 trajectories were removed. 2 remain.
+2016-10-12 16:11:10,392	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:11:10,392	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0005.FFE.png'
+2016-10-12 16:11:10,392	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:11:11,051	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:11:11,052	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0005.FFE.png'
+2016-10-12 16:11:11,503	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:11:11,509	rendertrajectories.py	INFO	356	Linear rendering of trajectory 2...
+2016-10-12 16:11:11,604	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0005.FFE.result.png.
+2016-10-12 16:11:11,605	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:11:12,296	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:12,296	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:11:12,298	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0006.FFE.png'.
+2016-10-12 16:11:12,298	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:11:12,894	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:12,895	pngdata.py	INFO	165	Open and read file 'mix1/out0006.FFE.png'
+2016-10-12 16:11:12,897	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:11:12,900	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0006.FFE.png' was updated.
+2016-10-12 16:11:13,490	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:11:13,492	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0006.FFE.png'
+2016-10-12 16:11:13,515	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:11:13,585	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:11:13,586	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:11:13,588	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:11:13,588	findfeatures.py	INFO	287	Found 38 contours
+2016-10-12 16:11:13,588	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:11:13,588	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:11:13,588	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:11:13,588	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:11:13,588	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:11:13,588	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:11:13,588	ffe.py	INFO	537	Contour 4 is a candidate for the separation zone. Area of contour: 162124.00
+2016-10-12 16:11:13,588	ffe.py	INFO	555	Found child 23 with area of 138275.00. Ratio: 0.90
+2016-10-12 16:11:13,588	ffe.py	INFO	560	Child is in ratio range: 0.85 <= 0.90 <= 0.95
+2016-10-12 16:11:13,588	findfeatures.py	INFO	321	Found a matching contour pair (4, 23) for the separation zone
+2016-10-12 16:11:13,588	findfeatures.py	INFO	324	Refining the contours.
+2016-10-12 16:11:13,589	findfeatures.py	INFO	384	Did not look for flow markers (--skip-flowmarkers given).
+2016-10-12 16:11:13,592	findfeatures.py	INFO	413	Saved coordinates in file.
+2016-10-12 16:11:13,592	findfeatures.py	INFO	425	Finding features ended on 'mix1/out0006.FFE.png'
+2016-10-12 16:11:13,592	findfeatures.py	INFO	426	####### Find features end #######
+2016-10-12 16:11:14,243	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:11:14,244	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0006.FFE.png'
+2016-10-12 16:11:14,249	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:11:14,321	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:11:14,321	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:11:14,322	findtrajectories.py	INFO	340	Extracted zone (448x333) from image (640x480)
+2016-10-12 16:11:14,322	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:11:14,322	findtrajectories.py	INFO	369	Resolution of image is 0.15 x 0.14 mm² per pixel²
+2016-10-12 16:11:14,323	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:11:14,323	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:11:14,325	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:11:15,121	findtrajectories.py	INFO	460	3 trajectories were found in file.
+2016-10-12 16:11:15,121	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:11:15,121	findtrajectories.py	INFO	482	0 of 3 trajectories were removed. 3 remain.
+2016-10-12 16:11:15,125	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:11:15,125	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0006.FFE.png'
+2016-10-12 16:11:15,127	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:11:15,783	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:11:15,785	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0006.FFE.png'
+2016-10-12 16:11:16,236	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:11:16,242	rendertrajectories.py	INFO	356	Linear rendering of trajectory 2...
+2016-10-12 16:11:16,243	rendertrajectories.py	INFO	356	Linear rendering of trajectory 3...
+2016-10-12 16:11:16,352	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0006.FFE.result.png.
+2016-10-12 16:11:16,352	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:11:17,071	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:17,072	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:11:17,072	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0007.FFE.png'.
+2016-10-12 16:11:17,072	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:11:17,694	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:17,694	pngdata.py	INFO	165	Open and read file 'mix1/out0007.FFE.png'
+2016-10-12 16:11:17,696	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:11:17,697	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0007.FFE.png' was updated.
+2016-10-12 16:11:18,342	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:11:18,342	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0007.FFE.png'
+2016-10-12 16:11:18,346	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:11:18,418	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:11:18,420	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:11:18,420	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:11:18,421	findfeatures.py	INFO	287	Found 42 contours
+2016-10-12 16:11:18,421	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:11:18,421	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:11:18,421	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:11:18,421	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:11:18,421	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:11:18,421	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:11:18,421	ffe.py	DEBUG	523	Contour 4 has no children
+2016-10-12 16:11:18,421	ffe.py	INFO	537	Contour 5 is a candidate for the separation zone. Area of contour: 162307.00
+2016-10-12 16:11:18,421	ffe.py	INFO	555	Found child 28 with area of 137759.50. Ratio: 0.80
+2016-10-12 16:11:18,421	ffe.py	DEBUG	518	Contour 6 has a parent
+2016-10-12 16:11:18,421	ffe.py	DEBUG	518	Contour 7 has a parent
+2016-10-12 16:11:18,421	ffe.py	DEBUG	518	Contour 8 has a parent
+2016-10-12 16:11:18,421	ffe.py	DEBUG	518	Contour 9 has a parent
+2016-10-12 16:11:18,421	ffe.py	DEBUG	518	Contour 10 has a parent
+2016-10-12 16:11:18,421	ffe.py	DEBUG	518	Contour 11 has a parent
+2016-10-12 16:11:18,421	ffe.py	DEBUG	518	Contour 12 has a parent
+2016-10-12 16:11:18,421	ffe.py	DEBUG	518	Contour 13 has a parent
+2016-10-12 16:11:18,421	ffe.py	DEBUG	518	Contour 14 has a parent
+2016-10-12 16:11:18,421	ffe.py	DEBUG	518	Contour 15 has a parent
+2016-10-12 16:11:18,421	ffe.py	DEBUG	518	Contour 16 has a parent
+2016-10-12 16:11:18,421	ffe.py	DEBUG	518	Contour 17 has a parent
+2016-10-12 16:11:18,421	ffe.py	DEBUG	518	Contour 18 has a parent
+2016-10-12 16:11:18,421	ffe.py	DEBUG	518	Contour 19 has a parent
+2016-10-12 16:11:18,421	ffe.py	DEBUG	518	Contour 20 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 21 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 22 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 23 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 24 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 25 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 26 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 27 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 28 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 29 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 30 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 31 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 32 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 33 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 34 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 35 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 36 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 37 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 38 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 39 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 40 has a parent
+2016-10-12 16:11:18,423	ffe.py	DEBUG	518	Contour 41 has a parent
+2016-10-12 16:11:18,423	findfeatures.py	ERROR	318	No contour was found, which matches the criteria for the separation zone
+2016-10-12 16:11:19,082	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:11:19,082	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0007.FFE.png'
+2016-10-12 16:11:19,086	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:11:19,157	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:11:19,157	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:11:19,160	findtrajectories.py	INFO	340	Extracted zone (450x333) from image (640x480)
+2016-10-12 16:11:19,160	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:11:19,160	findtrajectories.py	INFO	369	Resolution of image is 0.14 x 0.14 mm² per pixel²
+2016-10-12 16:11:19,161	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:11:19,161	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:11:19,161	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:11:19,918	findtrajectories.py	INFO	460	3 trajectories were found in file.
+2016-10-12 16:11:19,918	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:11:19,918	findtrajectories.py	INFO	482	1 of 3 trajectories were removed. 2 remain.
+2016-10-12 16:11:19,921	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:11:19,923	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0007.FFE.png'
+2016-10-12 16:11:19,923	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:11:20,565	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:11:20,566	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0007.FFE.png'
+2016-10-12 16:11:21,006	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:11:21,010	rendertrajectories.py	INFO	356	Linear rendering of trajectory 2...
+2016-10-12 16:11:21,105	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0007.FFE.result.png.
+2016-10-12 16:11:21,105	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:11:21,782	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:21,783	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:11:21,785	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0008.FFE.png'.
+2016-10-12 16:11:21,785	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:11:22,375	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:22,375	pngdata.py	INFO	165	Open and read file 'mix1/out0008.FFE.png'
+2016-10-12 16:11:22,377	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:11:22,380	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0008.FFE.png' was updated.
+2016-10-12 16:11:22,967	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:11:22,969	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0008.FFE.png'
+2016-10-12 16:11:22,973	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:11:23,045	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:11:23,046	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:11:23,046	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:11:23,046	findfeatures.py	INFO	287	Found 43 contours
+2016-10-12 16:11:23,046	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:11:23,046	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:11:23,048	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:11:23,048	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:11:23,048	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:11:23,048	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:11:23,048	ffe.py	DEBUG	523	Contour 4 has no children
+2016-10-12 16:11:23,048	ffe.py	INFO	537	Contour 5 is a candidate for the separation zone. Area of contour: 162482.50
+2016-10-12 16:11:23,048	ffe.py	INFO	555	Found child 28 with area of 137509.00. Ratio: 0.80
+2016-10-12 16:11:23,048	ffe.py	DEBUG	518	Contour 6 has a parent
+2016-10-12 16:11:23,048	ffe.py	DEBUG	518	Contour 7 has a parent
+2016-10-12 16:11:23,048	ffe.py	DEBUG	518	Contour 8 has a parent
+2016-10-12 16:11:23,048	ffe.py	DEBUG	518	Contour 9 has a parent
+2016-10-12 16:11:23,048	ffe.py	DEBUG	518	Contour 10 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 11 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 12 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 13 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 14 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 15 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 16 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 17 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 18 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 19 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 20 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 21 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 22 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 23 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 24 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 25 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 26 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 27 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 28 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 29 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 30 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 31 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 32 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 33 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 34 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 35 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 36 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 37 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 38 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 39 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 40 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 41 has a parent
+2016-10-12 16:11:23,049	ffe.py	DEBUG	518	Contour 42 has a parent
+2016-10-12 16:11:23,049	findfeatures.py	ERROR	318	No contour was found, which matches the criteria for the separation zone
+2016-10-12 16:11:23,693	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:11:23,694	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0008.FFE.png'
+2016-10-12 16:11:23,697	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:11:23,773	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:11:23,775	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:11:23,776	findtrajectories.py	INFO	340	Extracted zone (450x333) from image (640x480)
+2016-10-12 16:11:23,776	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:11:23,776	findtrajectories.py	INFO	369	Resolution of image is 0.14 x 0.14 mm² per pixel²
+2016-10-12 16:11:23,776	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:11:23,778	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:11:23,778	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:11:24,463	findtrajectories.py	INFO	460	3 trajectories were found in file.
+2016-10-12 16:11:24,463	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:11:24,463	findtrajectories.py	INFO	482	1 of 3 trajectories were removed. 2 remain.
+2016-10-12 16:11:24,467	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:11:24,467	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0008.FFE.png'
+2016-10-12 16:11:24,467	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:11:25,095	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:11:25,098	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0008.FFE.png'
+2016-10-12 16:11:25,530	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:11:25,536	rendertrajectories.py	INFO	356	Linear rendering of trajectory 2...
+2016-10-12 16:11:25,637	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0008.FFE.result.png.
+2016-10-12 16:11:25,637	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:11:26,295	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:26,296	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:11:26,298	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0009.FFE.png'.
+2016-10-12 16:11:26,298	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:11:26,881	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:26,881	pngdata.py	INFO	165	Open and read file 'mix1/out0009.FFE.png'
+2016-10-12 16:11:26,882	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:11:26,885	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0009.FFE.png' was updated.
+2016-10-12 16:11:27,460	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:11:27,461	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0009.FFE.png'
+2016-10-12 16:11:27,467	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:11:27,539	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:11:27,540	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:11:27,540	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:11:27,542	findfeatures.py	INFO	287	Found 49 contours
+2016-10-12 16:11:27,542	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:11:27,542	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:11:27,542	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:11:27,542	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:11:27,542	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:11:27,542	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:11:27,542	ffe.py	DEBUG	523	Contour 4 has no children
+2016-10-12 16:11:27,542	ffe.py	DEBUG	523	Contour 5 has no children
+2016-10-12 16:11:27,542	ffe.py	INFO	537	Contour 6 is a candidate for the separation zone. Area of contour: 162617.00
+2016-10-12 16:11:27,542	ffe.py	INFO	555	Found child 23 with area of 138092.50. Ratio: 0.80
+2016-10-12 16:11:27,542	ffe.py	DEBUG	518	Contour 7 has a parent
+2016-10-12 16:11:27,542	ffe.py	DEBUG	518	Contour 8 has a parent
+2016-10-12 16:11:27,542	ffe.py	DEBUG	518	Contour 9 has a parent
+2016-10-12 16:11:27,542	ffe.py	DEBUG	518	Contour 10 has a parent
+2016-10-12 16:11:27,542	ffe.py	DEBUG	518	Contour 11 has a parent
+2016-10-12 16:11:27,542	ffe.py	DEBUG	518	Contour 12 has a parent
+2016-10-12 16:11:27,542	ffe.py	DEBUG	518	Contour 13 has a parent
+2016-10-12 16:11:27,542	ffe.py	DEBUG	518	Contour 14 has a parent
+2016-10-12 16:11:27,542	ffe.py	DEBUG	518	Contour 15 has a parent
+2016-10-12 16:11:27,542	ffe.py	DEBUG	518	Contour 16 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 17 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 18 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 19 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 20 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 21 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 22 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 23 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 24 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 25 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 26 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 27 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 28 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 29 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 30 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 31 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 32 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 33 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 34 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 35 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 36 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 37 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 38 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 39 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 40 has a parent
+2016-10-12 16:11:27,543	ffe.py	DEBUG	518	Contour 41 has a parent
+2016-10-12 16:11:27,545	ffe.py	DEBUG	518	Contour 42 has a parent
+2016-10-12 16:11:27,545	ffe.py	DEBUG	518	Contour 43 has a parent
+2016-10-12 16:11:27,545	ffe.py	DEBUG	518	Contour 44 has a parent
+2016-10-12 16:11:27,545	ffe.py	DEBUG	518	Contour 45 has a parent
+2016-10-12 16:11:27,545	ffe.py	DEBUG	518	Contour 46 has a parent
+2016-10-12 16:11:27,545	ffe.py	DEBUG	518	Contour 47 has a parent
+2016-10-12 16:11:27,545	ffe.py	DEBUG	523	Contour 48 has no children
+2016-10-12 16:11:27,545	findfeatures.py	ERROR	318	No contour was found, which matches the criteria for the separation zone
+2016-10-12 16:11:28,184	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:11:28,186	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0009.FFE.png'
+2016-10-12 16:11:28,190	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:11:28,263	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:11:28,263	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:11:28,266	findtrajectories.py	INFO	340	Extracted zone (450x333) from image (640x480)
+2016-10-12 16:11:28,266	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:11:28,266	findtrajectories.py	INFO	369	Resolution of image is 0.14 x 0.14 mm² per pixel²
+2016-10-12 16:11:28,267	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:11:28,267	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:11:28,269	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:11:29,424	findtrajectories.py	INFO	460	5 trajectories were found in file.
+2016-10-12 16:11:29,424	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:11:29,424	findtrajectories.py	INFO	482	2 of 5 trajectories were removed. 3 remain.
+2016-10-12 16:11:29,427	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:11:29,427	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0009.FFE.png'
+2016-10-12 16:11:29,428	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:11:30,071	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:11:30,072	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0009.FFE.png'
+2016-10-12 16:11:30,520	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:11:30,526	rendertrajectories.py	INFO	356	Linear rendering of trajectory 2...
+2016-10-12 16:11:30,529	rendertrajectories.py	INFO	356	Linear rendering of trajectory 3...
+2016-10-12 16:11:30,632	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0009.FFE.result.png.
+2016-10-12 16:11:30,632	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:11:31,289	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:31,289	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:11:31,290	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0010.FFE.png'.
+2016-10-12 16:11:31,290	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:11:31,936	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:31,937	pngdata.py	INFO	165	Open and read file 'mix1/out0010.FFE.png'
+2016-10-12 16:11:31,937	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:11:31,946	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0010.FFE.png' was updated.
+2016-10-12 16:11:32,664	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:11:32,665	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0010.FFE.png'
+2016-10-12 16:11:32,670	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:11:32,752	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:11:32,752	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:11:32,753	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:11:32,753	findfeatures.py	INFO	287	Found 55 contours
+2016-10-12 16:11:32,753	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:11:32,753	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:11:32,753	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:11:32,753	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:11:32,753	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:11:32,755	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:11:32,755	ffe.py	DEBUG	523	Contour 4 has no children
+2016-10-12 16:11:32,755	ffe.py	DEBUG	523	Contour 5 has no children
+2016-10-12 16:11:32,755	ffe.py	DEBUG	523	Contour 6 has no children
+2016-10-12 16:11:32,755	ffe.py	DEBUG	523	Contour 7 has no children
+2016-10-12 16:11:32,755	ffe.py	DEBUG	523	Contour 8 has no children
+2016-10-12 16:11:32,755	ffe.py	INFO	537	Contour 9 is a candidate for the separation zone. Area of contour: 162321.50
+2016-10-12 16:11:32,755	ffe.py	INFO	555	Found child 31 with area of 134724.50. Ratio: 0.80
+2016-10-12 16:11:32,755	ffe.py	DEBUG	518	Contour 10 has a parent
+2016-10-12 16:11:32,755	ffe.py	DEBUG	518	Contour 11 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 12 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 13 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 14 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 15 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 16 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 17 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 18 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 19 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 20 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 21 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 22 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 23 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 24 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 25 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 26 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 27 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 28 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 29 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 30 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 31 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 32 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 33 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 34 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 35 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 36 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 37 has a parent
+2016-10-12 16:11:32,756	ffe.py	DEBUG	518	Contour 38 has a parent
+2016-10-12 16:11:32,757	ffe.py	DEBUG	518	Contour 39 has a parent
+2016-10-12 16:11:32,757	ffe.py	DEBUG	518	Contour 40 has a parent
+2016-10-12 16:11:32,757	ffe.py	DEBUG	518	Contour 41 has a parent
+2016-10-12 16:11:32,757	ffe.py	DEBUG	518	Contour 42 has a parent
+2016-10-12 16:11:32,757	ffe.py	DEBUG	518	Contour 43 has a parent
+2016-10-12 16:11:32,757	ffe.py	DEBUG	518	Contour 44 has a parent
+2016-10-12 16:11:32,757	ffe.py	DEBUG	518	Contour 45 has a parent
+2016-10-12 16:11:32,757	ffe.py	DEBUG	518	Contour 46 has a parent
+2016-10-12 16:11:32,757	ffe.py	DEBUG	518	Contour 47 has a parent
+2016-10-12 16:11:32,757	ffe.py	DEBUG	518	Contour 48 has a parent
+2016-10-12 16:11:32,757	ffe.py	DEBUG	518	Contour 49 has a parent
+2016-10-12 16:11:32,757	ffe.py	DEBUG	518	Contour 50 has a parent
+2016-10-12 16:11:32,757	ffe.py	DEBUG	518	Contour 51 has a parent
+2016-10-12 16:11:32,757	ffe.py	DEBUG	518	Contour 52 has a parent
+2016-10-12 16:11:32,759	ffe.py	DEBUG	518	Contour 53 has a parent
+2016-10-12 16:11:32,759	ffe.py	DEBUG	518	Contour 54 has a parent
+2016-10-12 16:11:32,759	findfeatures.py	ERROR	318	No contour was found, which matches the criteria for the separation zone
+2016-10-12 16:11:33,483	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:11:33,484	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0010.FFE.png'
+2016-10-12 16:11:33,490	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:11:33,569	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:11:33,569	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:11:33,572	findtrajectories.py	INFO	340	Extracted zone (450x333) from image (640x480)
+2016-10-12 16:11:33,572	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:11:33,572	findtrajectories.py	INFO	369	Resolution of image is 0.14 x 0.14 mm² per pixel²
+2016-10-12 16:11:33,572	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:11:33,573	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:11:33,575	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:11:34,828	findtrajectories.py	INFO	460	4 trajectories were found in file.
+2016-10-12 16:11:34,828	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:11:34,828	findtrajectories.py	INFO	482	1 of 4 trajectories were removed. 3 remain.
+2016-10-12 16:11:34,832	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:11:34,832	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0010.FFE.png'
+2016-10-12 16:11:34,832	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:11:35,516	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:11:35,516	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0010.FFE.png'
+2016-10-12 16:11:36,072	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:11:36,078	rendertrajectories.py	INFO	356	Linear rendering of trajectory 2...
+2016-10-12 16:11:36,082	rendertrajectories.py	INFO	356	Linear rendering of trajectory 3...
+2016-10-12 16:11:36,207	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0010.FFE.result.png.
+2016-10-12 16:11:36,207	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:11:37,000	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:37,002	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:11:37,003	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0011.FFE.png'.
+2016-10-12 16:11:37,003	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:11:37,763	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:37,765	pngdata.py	INFO	165	Open and read file 'mix1/out0011.FFE.png'
+2016-10-12 16:11:37,766	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:11:37,767	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0011.FFE.png' was updated.
+2016-10-12 16:11:38,405	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:11:38,407	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0011.FFE.png'
+2016-10-12 16:11:38,411	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:11:38,486	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:11:38,486	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:11:38,486	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:11:38,486	findfeatures.py	INFO	287	Found 44 contours
+2016-10-12 16:11:38,487	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:11:38,487	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:11:38,487	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:11:38,487	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:11:38,487	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:11:38,487	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:11:38,487	ffe.py	DEBUG	523	Contour 4 has no children
+2016-10-12 16:11:38,487	ffe.py	DEBUG	523	Contour 5 has no children
+2016-10-12 16:11:38,487	ffe.py	DEBUG	523	Contour 6 has no children
+2016-10-12 16:11:38,487	ffe.py	DEBUG	523	Contour 7 has no children
+2016-10-12 16:11:38,487	ffe.py	DEBUG	523	Contour 8 has no children
+2016-10-12 16:11:38,489	ffe.py	DEBUG	523	Contour 9 has no children
+2016-10-12 16:11:38,489	ffe.py	INFO	537	Contour 10 is a candidate for the separation zone. Area of contour: 162461.00
+2016-10-12 16:11:38,489	ffe.py	INFO	555	Found child 30 with area of 134347.00. Ratio: 0.80
+2016-10-12 16:11:38,489	ffe.py	DEBUG	518	Contour 11 has a parent
+2016-10-12 16:11:38,489	ffe.py	DEBUG	518	Contour 12 has a parent
+2016-10-12 16:11:38,489	ffe.py	DEBUG	518	Contour 13 has a parent
+2016-10-12 16:11:38,489	ffe.py	DEBUG	518	Contour 14 has a parent
+2016-10-12 16:11:38,489	ffe.py	DEBUG	518	Contour 15 has a parent
+2016-10-12 16:11:38,489	ffe.py	DEBUG	518	Contour 16 has a parent
+2016-10-12 16:11:38,489	ffe.py	DEBUG	518	Contour 17 has a parent
+2016-10-12 16:11:38,489	ffe.py	DEBUG	518	Contour 18 has a parent
+2016-10-12 16:11:38,489	ffe.py	DEBUG	518	Contour 19 has a parent
+2016-10-12 16:11:38,489	ffe.py	DEBUG	518	Contour 20 has a parent
+2016-10-12 16:11:38,489	ffe.py	DEBUG	518	Contour 21 has a parent
+2016-10-12 16:11:38,489	ffe.py	DEBUG	518	Contour 22 has a parent
+2016-10-12 16:11:38,489	ffe.py	DEBUG	518	Contour 23 has a parent
+2016-10-12 16:11:38,489	ffe.py	DEBUG	518	Contour 24 has a parent
+2016-10-12 16:11:38,489	ffe.py	DEBUG	518	Contour 25 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	518	Contour 26 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	518	Contour 27 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	518	Contour 28 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	518	Contour 29 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	518	Contour 30 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	518	Contour 31 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	518	Contour 32 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	518	Contour 33 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	518	Contour 34 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	518	Contour 35 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	518	Contour 36 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	518	Contour 37 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	518	Contour 38 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	518	Contour 39 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	518	Contour 40 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	518	Contour 41 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	518	Contour 42 has a parent
+2016-10-12 16:11:38,490	ffe.py	DEBUG	523	Contour 43 has no children
+2016-10-12 16:11:38,490	findfeatures.py	ERROR	318	No contour was found, which matches the criteria for the separation zone
+2016-10-12 16:11:39,171	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:11:39,173	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0011.FFE.png'
+2016-10-12 16:11:39,178	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:11:39,256	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:11:39,257	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:11:39,259	findtrajectories.py	INFO	340	Extracted zone (450x333) from image (640x480)
+2016-10-12 16:11:39,259	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:11:39,259	findtrajectories.py	INFO	369	Resolution of image is 0.14 x 0.14 mm² per pixel²
+2016-10-12 16:11:39,260	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:11:39,260	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:11:39,262	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:11:40,901	findtrajectories.py	INFO	460	6 trajectories were found in file.
+2016-10-12 16:11:40,901	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:11:40,901	findtrajectories.py	INFO	482	4 of 6 trajectories were removed. 2 remain.
+2016-10-12 16:11:40,905	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:11:40,905	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0011.FFE.png'
+2016-10-12 16:11:40,905	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:11:41,588	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:11:41,589	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0011.FFE.png'
+2016-10-12 16:11:42,065	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:11:42,073	rendertrajectories.py	INFO	356	Linear rendering of trajectory 2...
+2016-10-12 16:11:42,194	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0011.FFE.result.png.
+2016-10-12 16:11:42,194	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:11:42,904	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:42,905	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:11:42,907	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0012.FFE.png'.
+2016-10-12 16:11:42,907	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:11:43,532	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:43,533	pngdata.py	INFO	165	Open and read file 'mix1/out0012.FFE.png'
+2016-10-12 16:11:43,535	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:11:43,536	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0012.FFE.png' was updated.
+2016-10-12 16:11:44,119	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:11:44,121	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0012.FFE.png'
+2016-10-12 16:11:44,125	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:11:44,196	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:11:44,196	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:11:44,197	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:11:44,197	findfeatures.py	INFO	287	Found 88 contours
+2016-10-12 16:11:44,197	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:11:44,197	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:11:44,197	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:11:44,197	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:11:44,197	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:11:44,197	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:11:44,197	ffe.py	DEBUG	523	Contour 4 has no children
+2016-10-12 16:11:44,197	ffe.py	DEBUG	523	Contour 5 has no children
+2016-10-12 16:11:44,197	ffe.py	INFO	537	Contour 6 is a candidate for the separation zone. Area of contour: 164088.50
+2016-10-12 16:11:44,198	ffe.py	INFO	555	Found child 55 with area of 133414.00. Ratio: 0.80
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 7 has a parent
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 8 has a parent
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 9 has a parent
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 10 has a parent
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 11 has a parent
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 12 has a parent
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 13 has a parent
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 14 has a parent
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 15 has a parent
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 16 has a parent
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 17 has a parent
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 18 has a parent
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 19 has a parent
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 20 has a parent
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 21 has a parent
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 22 has a parent
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 23 has a parent
+2016-10-12 16:11:44,198	ffe.py	DEBUG	518	Contour 24 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 25 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 26 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 27 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 28 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 29 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 30 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 31 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 32 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 33 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 34 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 35 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 36 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 37 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 38 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 39 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 40 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 41 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 42 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 43 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 44 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 45 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 46 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 47 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 48 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 49 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 50 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 51 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 52 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 53 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 54 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 55 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 56 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 57 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 58 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 59 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 60 has a parent
+2016-10-12 16:11:44,200	ffe.py	DEBUG	518	Contour 61 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 62 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 63 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 64 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 65 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 66 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 67 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 68 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 69 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 70 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 71 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 72 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 73 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 74 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 75 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 76 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 77 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 78 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 79 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 80 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 81 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 82 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 83 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 84 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 85 has a parent
+2016-10-12 16:11:44,246	ffe.py	DEBUG	518	Contour 86 has a parent
+2016-10-12 16:11:44,247	ffe.py	DEBUG	518	Contour 87 has a parent
+2016-10-12 16:11:44,247	findfeatures.py	ERROR	318	No contour was found, which matches the criteria for the separation zone
+2016-10-12 16:11:45,003	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:11:45,005	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0012.FFE.png'
+2016-10-12 16:11:45,009	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:11:45,085	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:11:45,086	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:11:45,091	findtrajectories.py	INFO	340	Extracted zone (450x333) from image (640x480)
+2016-10-12 16:11:45,092	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:11:45,092	findtrajectories.py	INFO	369	Resolution of image is 0.14 x 0.14 mm² per pixel²
+2016-10-12 16:11:45,094	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:11:45,094	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:11:45,095	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:11:46,210	findtrajectories.py	INFO	460	3 trajectories were found in file.
+2016-10-12 16:11:46,210	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:11:46,210	findtrajectories.py	INFO	482	1 of 3 trajectories were removed. 2 remain.
+2016-10-12 16:11:46,213	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:11:46,213	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0012.FFE.png'
+2016-10-12 16:11:46,213	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:11:46,868	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:11:46,869	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0012.FFE.png'
+2016-10-12 16:11:47,328	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:11:47,332	rendertrajectories.py	INFO	356	Linear rendering of trajectory 2...
+2016-10-12 16:11:47,430	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0012.FFE.result.png.
+2016-10-12 16:11:47,430	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:11:48,085	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:48,085	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:11:48,085	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0013.FFE.png'.
+2016-10-12 16:11:48,086	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:11:48,668	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:48,671	pngdata.py	INFO	165	Open and read file 'mix1/out0013.FFE.png'
+2016-10-12 16:11:48,671	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:11:48,674	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0013.FFE.png' was updated.
+2016-10-12 16:11:49,257	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:11:49,259	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0013.FFE.png'
+2016-10-12 16:11:49,263	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:11:49,338	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:11:49,339	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:11:49,339	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:11:49,339	findfeatures.py	INFO	287	Found 65 contours
+2016-10-12 16:11:49,341	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:11:49,341	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:11:49,341	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:11:49,341	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:11:49,341	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:11:49,341	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:11:49,341	ffe.py	DEBUG	523	Contour 4 has no children
+2016-10-12 16:11:49,341	ffe.py	DEBUG	523	Contour 5 has no children
+2016-10-12 16:11:49,341	ffe.py	INFO	537	Contour 6 is a candidate for the separation zone. Area of contour: 163417.00
+2016-10-12 16:11:49,341	ffe.py	INFO	555	Found child 45 with area of 118311.00. Ratio: 0.70
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 7 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 8 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 9 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 10 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 11 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 12 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 13 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 14 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 15 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 16 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 17 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 18 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 19 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 20 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 21 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 22 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 23 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 24 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 25 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 26 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 27 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 28 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 29 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 30 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 31 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 32 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 33 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 34 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 35 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 36 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 37 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 38 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 39 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 40 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 41 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 42 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 43 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 44 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 45 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 46 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 47 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 48 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 49 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 50 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 51 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 52 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 53 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 54 has a parent
+2016-10-12 16:11:49,342	ffe.py	DEBUG	518	Contour 55 has a parent
+2016-10-12 16:11:49,344	ffe.py	DEBUG	518	Contour 56 has a parent
+2016-10-12 16:11:49,344	ffe.py	DEBUG	518	Contour 57 has a parent
+2016-10-12 16:11:49,344	ffe.py	DEBUG	518	Contour 58 has a parent
+2016-10-12 16:11:49,344	ffe.py	DEBUG	518	Contour 59 has a parent
+2016-10-12 16:11:49,344	ffe.py	DEBUG	518	Contour 60 has a parent
+2016-10-12 16:11:49,344	ffe.py	DEBUG	518	Contour 61 has a parent
+2016-10-12 16:11:49,344	ffe.py	DEBUG	518	Contour 62 has a parent
+2016-10-12 16:11:49,344	ffe.py	DEBUG	518	Contour 63 has a parent
+2016-10-12 16:11:49,344	ffe.py	DEBUG	523	Contour 64 has no children
+2016-10-12 16:11:49,344	findfeatures.py	ERROR	318	No contour was found, which matches the criteria for the separation zone
+2016-10-12 16:11:50,030	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:11:50,032	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0013.FFE.png'
+2016-10-12 16:11:50,036	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:11:50,111	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:11:50,112	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:11:50,114	findtrajectories.py	INFO	340	Extracted zone (450x333) from image (640x480)
+2016-10-12 16:11:50,115	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:11:50,115	findtrajectories.py	INFO	369	Resolution of image is 0.14 x 0.14 mm² per pixel²
+2016-10-12 16:11:50,115	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:11:50,115	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:11:50,117	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:11:50,931	findtrajectories.py	INFO	460	3 trajectories were found in file.
+2016-10-12 16:11:50,931	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:11:50,931	findtrajectories.py	INFO	482	1 of 3 trajectories were removed. 2 remain.
+2016-10-12 16:11:50,934	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:11:50,934	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0013.FFE.png'
+2016-10-12 16:11:50,934	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:11:51,635	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:11:51,637	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0013.FFE.png'
+2016-10-12 16:11:52,115	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:11:52,125	rendertrajectories.py	INFO	356	Linear rendering of trajectory 2...
+2016-10-12 16:11:52,233	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0013.FFE.result.png.
+2016-10-12 16:11:52,233	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:11:52,943	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:52,944	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:11:52,944	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0014.FFE.png'.
+2016-10-12 16:11:52,944	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:11:53,568	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:53,569	pngdata.py	INFO	165	Open and read file 'mix1/out0014.FFE.png'
+2016-10-12 16:11:53,569	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:11:53,572	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0014.FFE.png' was updated.
+2016-10-12 16:11:54,167	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:11:54,167	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0014.FFE.png'
+2016-10-12 16:11:54,171	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:11:54,246	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:11:54,246	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:11:54,246	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:11:54,246	findfeatures.py	INFO	287	Found 70 contours
+2016-10-12 16:11:54,247	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:11:54,247	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:11:54,247	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:11:54,247	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:11:54,247	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:11:54,247	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:11:54,247	ffe.py	DEBUG	523	Contour 4 has no children
+2016-10-12 16:11:54,247	ffe.py	DEBUG	523	Contour 5 has no children
+2016-10-12 16:11:54,249	ffe.py	DEBUG	523	Contour 6 has no children
+2016-10-12 16:11:54,249	ffe.py	DEBUG	523	Contour 7 has no children
+2016-10-12 16:11:54,249	ffe.py	DEBUG	523	Contour 8 has no children
+2016-10-12 16:11:54,249	ffe.py	INFO	537	Contour 9 is a candidate for the separation zone. Area of contour: 163253.50
+2016-10-12 16:11:54,249	ffe.py	INFO	555	Found child 43 with area of 135600.50. Ratio: 0.80
+2016-10-12 16:11:54,249	ffe.py	DEBUG	518	Contour 10 has a parent
+2016-10-12 16:11:54,249	ffe.py	DEBUG	518	Contour 11 has a parent
+2016-10-12 16:11:54,249	ffe.py	DEBUG	518	Contour 12 has a parent
+2016-10-12 16:11:54,249	ffe.py	DEBUG	518	Contour 13 has a parent
+2016-10-12 16:11:54,249	ffe.py	DEBUG	518	Contour 14 has a parent
+2016-10-12 16:11:54,249	ffe.py	DEBUG	518	Contour 15 has a parent
+2016-10-12 16:11:54,249	ffe.py	DEBUG	518	Contour 16 has a parent
+2016-10-12 16:11:54,249	ffe.py	DEBUG	518	Contour 17 has a parent
+2016-10-12 16:11:54,249	ffe.py	DEBUG	518	Contour 18 has a parent
+2016-10-12 16:11:54,249	ffe.py	DEBUG	518	Contour 19 has a parent
+2016-10-12 16:11:54,249	ffe.py	DEBUG	518	Contour 20 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 21 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 22 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 23 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 24 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 25 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 26 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 27 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 28 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 29 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 30 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 31 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 32 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 33 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 34 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 35 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 36 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 37 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 38 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 39 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 40 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 41 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 42 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 43 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 44 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 45 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 46 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 47 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 48 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 49 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 50 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 51 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 52 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 53 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 54 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 55 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 56 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 57 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 58 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 59 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 60 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 61 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 62 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 63 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 64 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 65 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 66 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 67 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 68 has a parent
+2016-10-12 16:11:54,250	ffe.py	DEBUG	518	Contour 69 has a parent
+2016-10-12 16:11:54,250	findfeatures.py	ERROR	318	No contour was found, which matches the criteria for the separation zone
+2016-10-12 16:11:54,898	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:11:54,900	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0014.FFE.png'
+2016-10-12 16:11:54,904	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:11:54,976	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:11:54,977	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:11:54,980	findtrajectories.py	INFO	340	Extracted zone (450x333) from image (640x480)
+2016-10-12 16:11:54,980	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:11:54,980	findtrajectories.py	INFO	369	Resolution of image is 0.14 x 0.14 mm² per pixel²
+2016-10-12 16:11:54,980	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:11:54,980	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:11:54,980	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:11:55,917	findtrajectories.py	INFO	460	3 trajectories were found in file.
+2016-10-12 16:11:55,917	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:11:55,917	findtrajectories.py	INFO	482	1 of 3 trajectories were removed. 2 remain.
+2016-10-12 16:11:55,921	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:11:55,921	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0014.FFE.png'
+2016-10-12 16:11:55,921	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:11:56,559	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:11:56,562	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0014.FFE.png'
+2016-10-12 16:11:57,000	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:11:57,006	rendertrajectories.py	INFO	356	Linear rendering of trajectory 2...
+2016-10-12 16:11:57,104	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0014.FFE.result.png.
+2016-10-12 16:11:57,104	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:11:57,762	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:57,763	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:11:57,763	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0015.FFE.png'.
+2016-10-12 16:11:57,763	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:11:58,346	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:11:58,348	pngdata.py	INFO	165	Open and read file 'mix1/out0015.FFE.png'
+2016-10-12 16:11:58,348	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:11:58,351	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0015.FFE.png' was updated.
+2016-10-12 16:11:58,927	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:11:58,927	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0015.FFE.png'
+2016-10-12 16:11:58,931	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:11:59,002	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:11:59,003	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:11:59,003	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:11:59,003	findfeatures.py	INFO	287	Found 37 contours
+2016-10-12 16:11:59,003	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:11:59,003	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:11:59,003	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:11:59,003	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:11:59,003	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:11:59,003	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:11:59,003	ffe.py	INFO	537	Contour 4 is a candidate for the separation zone. Area of contour: 161703.00
+2016-10-12 16:11:59,003	ffe.py	INFO	555	Found child 20 with area of 139707.50. Ratio: 0.90
+2016-10-12 16:11:59,003	ffe.py	INFO	560	Child is in ratio range: 0.85 <= 0.90 <= 0.95
+2016-10-12 16:11:59,003	findfeatures.py	INFO	321	Found a matching contour pair (4, 20) for the separation zone
+2016-10-12 16:11:59,005	findfeatures.py	INFO	324	Refining the contours.
+2016-10-12 16:11:59,005	findfeatures.py	INFO	384	Did not look for flow markers (--skip-flowmarkers given).
+2016-10-12 16:11:59,006	findfeatures.py	INFO	413	Saved coordinates in file.
+2016-10-12 16:11:59,007	findfeatures.py	INFO	425	Finding features ended on 'mix1/out0015.FFE.png'
+2016-10-12 16:11:59,007	findfeatures.py	INFO	426	####### Find features end #######
+2016-10-12 16:11:59,651	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:11:59,654	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0015.FFE.png'
+2016-10-12 16:11:59,657	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:11:59,730	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:11:59,732	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:11:59,733	findtrajectories.py	INFO	340	Extracted zone (450x333) from image (640x480)
+2016-10-12 16:11:59,733	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:11:59,733	findtrajectories.py	INFO	369	Resolution of image is 0.14 x 0.14 mm² per pixel²
+2016-10-12 16:11:59,734	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:11:59,734	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:11:59,736	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:12:00,358	findtrajectories.py	INFO	460	3 trajectories were found in file.
+2016-10-12 16:12:00,358	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:12:00,358	findtrajectories.py	INFO	482	2 of 3 trajectories were removed. 1 remain.
+2016-10-12 16:12:00,361	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:12:00,361	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0015.FFE.png'
+2016-10-12 16:12:00,361	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:12:00,996	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:12:00,997	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0015.FFE.png'
+2016-10-12 16:12:01,424	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:12:01,517	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0015.FFE.result.png.
+2016-10-12 16:12:01,517	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:12:02,177	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:12:02,178	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:12:02,180	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0016.FFE.png'.
+2016-10-12 16:12:02,180	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:12:02,755	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:12:02,756	pngdata.py	INFO	165	Open and read file 'mix1/out0016.FFE.png'
+2016-10-12 16:12:02,756	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:12:02,759	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0016.FFE.png' was updated.
+2016-10-12 16:12:03,342	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:12:03,344	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0016.FFE.png'
+2016-10-12 16:12:03,348	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:12:03,420	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:12:03,420	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:12:03,421	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:12:03,421	findfeatures.py	INFO	287	Found 38 contours
+2016-10-12 16:12:03,421	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:12:03,421	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:12:03,421	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:12:03,421	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:12:03,421	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:12:03,421	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:12:03,421	ffe.py	DEBUG	523	Contour 4 has no children
+2016-10-12 16:12:03,421	ffe.py	INFO	537	Contour 5 is a candidate for the separation zone. Area of contour: 161777.50
+2016-10-12 16:12:03,421	ffe.py	INFO	555	Found child 16 with area of 141515.00. Ratio: 0.90
+2016-10-12 16:12:03,423	ffe.py	INFO	560	Child is in ratio range: 0.85 <= 0.90 <= 0.95
+2016-10-12 16:12:03,423	findfeatures.py	INFO	321	Found a matching contour pair (5, 16) for the separation zone
+2016-10-12 16:12:03,423	findfeatures.py	INFO	324	Refining the contours.
+2016-10-12 16:12:03,423	findfeatures.py	INFO	384	Did not look for flow markers (--skip-flowmarkers given).
+2016-10-12 16:12:03,424	findfeatures.py	INFO	413	Saved coordinates in file.
+2016-10-12 16:12:03,424	findfeatures.py	INFO	425	Finding features ended on 'mix1/out0016.FFE.png'
+2016-10-12 16:12:03,426	findfeatures.py	INFO	426	####### Find features end #######
+2016-10-12 16:12:04,056	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:12:04,230	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0016.FFE.png'
+2016-10-12 16:12:04,234	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:12:04,308	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:12:04,309	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:12:04,311	findtrajectories.py	INFO	340	Extracted zone (450x333) from image (640x480)
+2016-10-12 16:12:04,311	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:12:04,312	findtrajectories.py	INFO	369	Resolution of image is 0.14 x 0.14 mm² per pixel²
+2016-10-12 16:12:04,312	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:12:04,312	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:12:04,312	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:12:05,223	findtrajectories.py	INFO	460	4 trajectories were found in file.
+2016-10-12 16:12:05,223	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:12:05,223	findtrajectories.py	INFO	482	2 of 4 trajectories were removed. 2 remain.
+2016-10-12 16:12:05,226	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:12:05,226	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0016.FFE.png'
+2016-10-12 16:12:05,226	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:12:05,865	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:12:05,867	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0016.FFE.png'
+2016-10-12 16:12:06,311	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:12:06,316	rendertrajectories.py	INFO	356	Linear rendering of trajectory 2...
+2016-10-12 16:12:06,411	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0016.FFE.result.png.
+2016-10-12 16:12:06,411	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:12:07,063	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:12:07,065	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:12:07,065	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0017.FFE.png'.
+2016-10-12 16:12:07,065	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:12:07,642	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:12:07,644	pngdata.py	INFO	165	Open and read file 'mix1/out0017.FFE.png'
+2016-10-12 16:12:07,644	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:12:07,647	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0017.FFE.png' was updated.
+2016-10-12 16:12:08,240	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:12:08,240	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0017.FFE.png'
+2016-10-12 16:12:08,244	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:12:08,315	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:12:08,315	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:12:08,316	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:12:08,316	findfeatures.py	INFO	287	Found 31 contours
+2016-10-12 16:12:08,318	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:12:08,318	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:12:08,318	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:12:08,318	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:12:08,318	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:12:08,318	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:12:08,318	ffe.py	DEBUG	523	Contour 4 has no children
+2016-10-12 16:12:08,318	ffe.py	INFO	537	Contour 5 is a candidate for the separation zone. Area of contour: 161917.00
+2016-10-12 16:12:08,318	ffe.py	INFO	555	Found child 16 with area of 141502.00. Ratio: 0.90
+2016-10-12 16:12:08,318	ffe.py	INFO	560	Child is in ratio range: 0.85 <= 0.90 <= 0.95
+2016-10-12 16:12:08,319	findfeatures.py	INFO	321	Found a matching contour pair (5, 16) for the separation zone
+2016-10-12 16:12:08,319	findfeatures.py	INFO	324	Refining the contours.
+2016-10-12 16:12:08,319	findfeatures.py	INFO	384	Did not look for flow markers (--skip-flowmarkers given).
+2016-10-12 16:12:08,321	findfeatures.py	INFO	413	Saved coordinates in file.
+2016-10-12 16:12:08,321	findfeatures.py	INFO	425	Finding features ended on 'mix1/out0017.FFE.png'
+2016-10-12 16:12:08,321	findfeatures.py	INFO	426	####### Find features end #######
+2016-10-12 16:12:08,963	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:12:08,963	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0017.FFE.png'
+2016-10-12 16:12:08,967	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:12:09,039	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:12:09,039	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:12:09,042	findtrajectories.py	INFO	340	Extracted zone (448x333) from image (640x480)
+2016-10-12 16:12:09,042	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:12:09,042	findtrajectories.py	INFO	369	Resolution of image is 0.15 x 0.14 mm² per pixel²
+2016-10-12 16:12:09,042	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:12:09,042	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:12:09,043	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:12:09,890	findtrajectories.py	INFO	460	4 trajectories were found in file.
+2016-10-12 16:12:09,891	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:12:09,891	findtrajectories.py	INFO	482	2 of 4 trajectories were removed. 2 remain.
+2016-10-12 16:12:09,894	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:12:09,894	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0017.FFE.png'
+2016-10-12 16:12:09,894	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:12:10,552	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:12:10,552	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0017.FFE.png'
+2016-10-12 16:12:10,990	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:12:10,994	rendertrajectories.py	INFO	356	Linear rendering of trajectory 2...
+2016-10-12 16:12:11,088	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0017.FFE.result.png.
+2016-10-12 16:12:11,088	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:12:11,752	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:12:11,753	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:12:11,753	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0018.FFE.png'.
+2016-10-12 16:12:11,753	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:12:12,334	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:12:12,335	pngdata.py	INFO	165	Open and read file 'mix1/out0018.FFE.png'
+2016-10-12 16:12:12,335	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:12:12,338	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0018.FFE.png' was updated.
+2016-10-12 16:12:12,915	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:12:12,917	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0018.FFE.png'
+2016-10-12 16:12:12,921	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:12:12,993	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:12:12,993	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:12:12,993	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:12:12,993	findfeatures.py	INFO	287	Found 30 contours
+2016-10-12 16:12:12,993	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:12:12,994	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:12:12,994	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:12:12,994	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:12:12,994	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:12:12,994	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:12:12,994	ffe.py	DEBUG	523	Contour 4 has no children
+2016-10-12 16:12:12,994	ffe.py	DEBUG	523	Contour 5 has no children
+2016-10-12 16:12:12,994	ffe.py	DEBUG	523	Contour 6 has no children
+2016-10-12 16:12:12,994	ffe.py	INFO	537	Contour 7 is a candidate for the separation zone. Area of contour: 161876.50
+2016-10-12 16:12:12,996	ffe.py	INFO	555	Found child 18 with area of 142148.00. Ratio: 0.90
+2016-10-12 16:12:12,996	ffe.py	INFO	560	Child is in ratio range: 0.85 <= 0.90 <= 0.95
+2016-10-12 16:12:12,996	findfeatures.py	INFO	321	Found a matching contour pair (7, 18) for the separation zone
+2016-10-12 16:12:12,996	findfeatures.py	INFO	324	Refining the contours.
+2016-10-12 16:12:12,996	findfeatures.py	INFO	384	Did not look for flow markers (--skip-flowmarkers given).
+2016-10-12 16:12:12,999	findfeatures.py	INFO	413	Saved coordinates in file.
+2016-10-12 16:12:12,999	findfeatures.py	INFO	425	Finding features ended on 'mix1/out0018.FFE.png'
+2016-10-12 16:12:12,999	findfeatures.py	INFO	426	####### Find features end #######
+2016-10-12 16:12:13,632	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:12:13,632	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0018.FFE.png'
+2016-10-12 16:12:13,637	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:12:13,710	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:12:13,711	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:12:13,713	findtrajectories.py	INFO	340	Extracted zone (448x333) from image (640x480)
+2016-10-12 16:12:13,713	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:12:13,713	findtrajectories.py	INFO	369	Resolution of image is 0.15 x 0.14 mm² per pixel²
+2016-10-12 16:12:13,713	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:12:13,714	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:12:13,714	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:12:14,365	findtrajectories.py	INFO	460	2 trajectories were found in file.
+2016-10-12 16:12:14,365	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:12:14,365	findtrajectories.py	INFO	482	1 of 2 trajectories were removed. 1 remain.
+2016-10-12 16:12:14,368	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:12:14,368	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0018.FFE.png'
+2016-10-12 16:12:14,369	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:12:15,032	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:12:15,032	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0018.FFE.png'
+2016-10-12 16:12:15,499	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:12:15,592	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0018.FFE.result.png.
+2016-10-12 16:12:15,592	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:12:16,285	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:12:16,286	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:12:16,286	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0019.FFE.png'.
+2016-10-12 16:12:16,286	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:12:16,907	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:12:16,907	pngdata.py	INFO	165	Open and read file 'mix1/out0019.FFE.png'
+2016-10-12 16:12:16,908	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:12:16,911	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0019.FFE.png' was updated.
+2016-10-12 16:12:17,555	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:12:17,556	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0019.FFE.png'
+2016-10-12 16:12:17,561	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:12:17,632	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:12:17,632	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:12:17,634	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:12:17,634	findfeatures.py	INFO	287	Found 23 contours
+2016-10-12 16:12:17,634	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:12:17,634	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:12:17,634	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:12:17,634	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:12:17,634	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:12:17,634	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:12:17,634	ffe.py	DEBUG	523	Contour 4 has no children
+2016-10-12 16:12:17,634	ffe.py	INFO	537	Contour 5 is a candidate for the separation zone. Area of contour: 161856.00
+2016-10-12 16:12:17,634	ffe.py	INFO	555	Found child 12 with area of 142785.00. Ratio: 0.90
+2016-10-12 16:12:17,634	ffe.py	INFO	560	Child is in ratio range: 0.85 <= 0.90 <= 0.95
+2016-10-12 16:12:17,634	findfeatures.py	INFO	321	Found a matching contour pair (5, 12) for the separation zone
+2016-10-12 16:12:17,634	findfeatures.py	INFO	324	Refining the contours.
+2016-10-12 16:12:17,635	findfeatures.py	INFO	384	Did not look for flow markers (--skip-flowmarkers given).
+2016-10-12 16:12:17,638	findfeatures.py	INFO	413	Saved coordinates in file.
+2016-10-12 16:12:17,638	findfeatures.py	INFO	425	Finding features ended on 'mix1/out0019.FFE.png'
+2016-10-12 16:12:17,638	findfeatures.py	INFO	426	####### Find features end #######
+2016-10-12 16:12:18,312	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:12:18,313	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0019.FFE.png'
+2016-10-12 16:12:18,319	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:12:18,391	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:12:18,392	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:12:18,394	findtrajectories.py	INFO	340	Extracted zone (448x333) from image (640x480)
+2016-10-12 16:12:18,394	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:12:18,395	findtrajectories.py	INFO	369	Resolution of image is 0.15 x 0.14 mm² per pixel²
+2016-10-12 16:12:18,395	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:12:18,395	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:12:18,397	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:12:18,799	findtrajectories.py	INFO	460	2 trajectories were found in file.
+2016-10-12 16:12:18,799	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:12:18,799	findtrajectories.py	INFO	482	1 of 2 trajectories were removed. 1 remain.
+2016-10-12 16:12:18,802	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:12:18,802	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0019.FFE.png'
+2016-10-12 16:12:18,802	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:12:19,480	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:12:19,482	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0019.FFE.png'
+2016-10-12 16:12:19,960	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:12:20,073	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0019.FFE.result.png.
+2016-10-12 16:12:20,075	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:12:20,780	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:12:20,782	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:12:20,782	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0020.FFE.png'.
+2016-10-12 16:12:20,782	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:12:21,378	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:12:21,378	pngdata.py	INFO	165	Open and read file 'mix1/out0020.FFE.png'
+2016-10-12 16:12:21,380	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:12:21,382	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0020.FFE.png' was updated.
+2016-10-12 16:12:21,967	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:12:21,969	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0020.FFE.png'
+2016-10-12 16:12:21,973	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:12:22,045	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:12:22,046	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:12:22,046	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:12:22,046	findfeatures.py	INFO	287	Found 20 contours
+2016-10-12 16:12:22,046	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:12:22,046	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:12:22,046	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:12:22,046	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:12:22,046	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:12:22,046	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:12:22,046	ffe.py	DEBUG	523	Contour 4 has no children
+2016-10-12 16:12:22,046	ffe.py	INFO	537	Contour 5 is a candidate for the separation zone. Area of contour: 161724.50
+2016-10-12 16:12:22,046	ffe.py	INFO	555	Found child 10 with area of 143279.50. Ratio: 0.90
+2016-10-12 16:12:22,046	ffe.py	INFO	560	Child is in ratio range: 0.85 <= 0.90 <= 0.95
+2016-10-12 16:12:22,048	findfeatures.py	INFO	321	Found a matching contour pair (5, 10) for the separation zone
+2016-10-12 16:12:22,048	findfeatures.py	INFO	324	Refining the contours.
+2016-10-12 16:12:22,048	findfeatures.py	INFO	384	Did not look for flow markers (--skip-flowmarkers given).
+2016-10-12 16:12:22,049	findfeatures.py	INFO	413	Saved coordinates in file.
+2016-10-12 16:12:22,051	findfeatures.py	INFO	425	Finding features ended on 'mix1/out0020.FFE.png'
+2016-10-12 16:12:22,051	findfeatures.py	INFO	426	####### Find features end #######
+2016-10-12 16:12:22,713	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:12:22,714	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0020.FFE.png'
+2016-10-12 16:12:22,719	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:12:22,789	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:12:22,790	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:12:22,792	findtrajectories.py	INFO	340	Extracted zone (448x333) from image (640x480)
+2016-10-12 16:12:22,792	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:12:22,792	findtrajectories.py	INFO	369	Resolution of image is 0.15 x 0.14 mm² per pixel²
+2016-10-12 16:12:22,793	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:12:22,793	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:12:22,795	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:12:23,188	ffe.py	WARNING	1269	calculateTrajectoriesOverlap(trac1, trac2): empty trajectories given.
+2016-10-12 16:12:23,188	findtrajectories.py	INFO	460	2 trajectories were found in file.
+2016-10-12 16:12:23,190	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:12:23,190	findtrajectories.py	INFO	482	1 of 2 trajectories were removed. 1 remain.
+2016-10-12 16:12:23,191	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:12:23,193	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0020.FFE.png'
+2016-10-12 16:12:23,193	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:12:23,841	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:12:23,842	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0020.FFE.png'
+2016-10-12 16:12:24,276	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:12:24,368	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0020.FFE.result.png.
+2016-10-12 16:12:24,369	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:12:25,019	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:12:25,020	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:12:25,022	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0021.FFE.png'.
+2016-10-12 16:12:25,022	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:12:25,638	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:12:25,641	pngdata.py	INFO	165	Open and read file 'mix1/out0021.FFE.png'
+2016-10-12 16:12:25,641	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:12:25,644	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0021.FFE.png' was updated.
+2016-10-12 16:12:26,243	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:12:26,243	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0021.FFE.png'
+2016-10-12 16:12:26,247	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:12:26,319	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:12:26,319	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:12:26,321	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:12:26,321	findfeatures.py	INFO	287	Found 22 contours
+2016-10-12 16:12:26,321	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:12:26,322	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:12:26,322	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:12:26,322	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:12:26,322	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:12:26,322	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:12:26,322	ffe.py	INFO	537	Contour 4 is a candidate for the separation zone. Area of contour: 161688.00
+2016-10-12 16:12:26,322	ffe.py	INFO	555	Found child 11 with area of 143198.50. Ratio: 0.90
+2016-10-12 16:12:26,322	ffe.py	INFO	560	Child is in ratio range: 0.85 <= 0.90 <= 0.95
+2016-10-12 16:12:26,322	findfeatures.py	INFO	321	Found a matching contour pair (4, 11) for the separation zone
+2016-10-12 16:12:26,322	findfeatures.py	INFO	324	Refining the contours.
+2016-10-12 16:12:26,322	findfeatures.py	INFO	384	Did not look for flow markers (--skip-flowmarkers given).
+2016-10-12 16:12:26,325	findfeatures.py	INFO	413	Saved coordinates in file.
+2016-10-12 16:12:26,325	findfeatures.py	INFO	425	Finding features ended on 'mix1/out0021.FFE.png'
+2016-10-12 16:12:26,325	findfeatures.py	INFO	426	####### Find features end #######
+2016-10-12 16:12:26,967	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:12:26,967	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0021.FFE.png'
+2016-10-12 16:12:26,970	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:12:27,042	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:12:27,043	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:12:27,046	findtrajectories.py	INFO	340	Extracted zone (450x333) from image (640x480)
+2016-10-12 16:12:27,046	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:12:27,046	findtrajectories.py	INFO	369	Resolution of image is 0.14 x 0.14 mm² per pixel²
+2016-10-12 16:12:27,046	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:12:27,046	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:12:27,048	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:12:27,447	ffe.py	WARNING	1269	calculateTrajectoriesOverlap(trac1, trac2): empty trajectories given.
+2016-10-12 16:12:27,447	findtrajectories.py	INFO	460	2 trajectories were found in file.
+2016-10-12 16:12:27,447	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:12:27,447	findtrajectories.py	INFO	482	1 of 2 trajectories were removed. 1 remain.
+2016-10-12 16:12:27,450	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:12:27,450	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0021.FFE.png'
+2016-10-12 16:12:27,450	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:12:28,180	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:12:28,181	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0021.FFE.png'
+2016-10-12 16:12:28,634	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:12:28,752	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0021.FFE.result.png.
+2016-10-12 16:12:28,752	rendertrajectories.py	INFO	397	####### Render trajectories end #######
+2016-10-12 16:12:29,447	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:12:29,448	pngdata.py	INFO	165	Open and read file 'mix1/out0001.FFE.png'
+2016-10-12 16:12:29,450	pngdata.py	INFO	226	Copy data from 'mix1/out0001.FFE.png' to 'mix1/out0022.FFE.png'.
+2016-10-12 16:12:29,450	pngdata.py	INFO	233	Will not overwrite data recorded during acquisition.
+2016-10-12 16:12:30,052	pngdata.py	INFO	160	####### Manipulating PNG data #######
+2016-10-12 16:12:30,055	pngdata.py	INFO	165	Open and read file 'mix1/out0022.FFE.png'
+2016-10-12 16:12:30,055	pngdata.py	INFO	250	Read from standard input.
+2016-10-12 16:12:30,058	pngdata.py	INFO	286	Items added. Dictionary of 'mix1/out0022.FFE.png' was updated.
+2016-10-12 16:12:30,660	findfeatures.py	INFO	208	####### Find features #######
+2016-10-12 16:12:30,661	findfeatures.py	INFO	209	Trying to find features on 'mix1/out0022.FFE.png'
+2016-10-12 16:12:30,665	findfeatures.py	INFO	228	Read input file
+2016-10-12 16:12:30,730	findfeatures.py	INFO	252	Created gray image
+2016-10-12 16:12:30,730	findfeatures.py	INFO	262	Created binary image using 25 as threshold
+2016-10-12 16:12:30,730	findfeatures.py	INFO	272	Searching for contours
+2016-10-12 16:12:30,730	findfeatures.py	INFO	287	Found 23 contours
+2016-10-12 16:12:30,732	findfeatures.py	INFO	302	Calculated center-points of contours
+2016-10-12 16:12:30,732	findfeatures.py	INFO	310	Trying to find top-level contour with at least 76800 pixels in size
+2016-10-12 16:12:30,732	ffe.py	DEBUG	523	Contour 0 has no children
+2016-10-12 16:12:30,732	ffe.py	DEBUG	523	Contour 1 has no children
+2016-10-12 16:12:30,732	ffe.py	DEBUG	523	Contour 2 has no children
+2016-10-12 16:12:30,732	ffe.py	DEBUG	523	Contour 3 has no children
+2016-10-12 16:12:30,732	ffe.py	INFO	537	Contour 4 is a candidate for the separation zone. Area of contour: 161633.00
+2016-10-12 16:12:30,732	ffe.py	INFO	555	Found child 10 with area of 143066.50. Ratio: 0.90
+2016-10-12 16:12:30,732	ffe.py	INFO	560	Child is in ratio range: 0.85 <= 0.90 <= 0.95
+2016-10-12 16:12:30,732	findfeatures.py	INFO	321	Found a matching contour pair (4, 10) for the separation zone
+2016-10-12 16:12:30,732	findfeatures.py	INFO	324	Refining the contours.
+2016-10-12 16:12:30,733	findfeatures.py	INFO	384	Did not look for flow markers (--skip-flowmarkers given).
+2016-10-12 16:12:30,734	findfeatures.py	INFO	413	Saved coordinates in file.
+2016-10-12 16:12:30,734	findfeatures.py	INFO	425	Finding features ended on 'mix1/out0022.FFE.png'
+2016-10-12 16:12:30,734	findfeatures.py	INFO	426	####### Find features end #######
+2016-10-12 16:12:31,403	findtrajectories.py	INFO	288	####### Find trajectories #######
+2016-10-12 16:12:31,404	findtrajectories.py	INFO	289	Trying to find trajectories on 'mix1/out0022.FFE.png'
+2016-10-12 16:12:31,407	findtrajectories.py	INFO	308	Read input file
+2016-10-12 16:12:31,482	findtrajectories.py	INFO	322	Only green channel is used for finding trajectories
+2016-10-12 16:12:31,483	findtrajectories.py	INFO	332	Extracting separation zone from image
+2016-10-12 16:12:31,484	findtrajectories.py	INFO	340	Extracted zone (450x333) from image (640x480)
+2016-10-12 16:12:31,484	findtrajectories.py	INFO	357	Flow direction is (-1.00, 0.00)
+2016-10-12 16:12:31,484	findtrajectories.py	INFO	369	Resolution of image is 0.14 x 0.14 mm² per pixel²
+2016-10-12 16:12:31,486	findtrajectories.py	INFO	385	Only use inlet 2 for evaluation.
+2016-10-12 16:12:31,486	findtrajectories.py	INFO	388	1 inlet(s) in data. Will be used as starting points.
+2016-10-12 16:12:31,486	findtrajectories.py	INFO	422	Search green channel for trajectories
+2016-10-12 16:12:32,131	ffe.py	WARNING	1269	calculateTrajectoriesOverlap(trac1, trac2): empty trajectories given.
+2016-10-12 16:12:32,134	ffe.py	WARNING	1269	calculateTrajectoriesOverlap(trac1, trac2): empty trajectories given.
+2016-10-12 16:12:32,135	findtrajectories.py	INFO	460	3 trajectories were found in file.
+2016-10-12 16:12:32,135	findtrajectories.py	INFO	470	Remove all trajectories with less than 15 points.
+2016-10-12 16:12:32,135	findtrajectories.py	INFO	482	2 of 3 trajectories were removed. 1 remain.
+2016-10-12 16:12:32,138	findtrajectories.py	INFO	530	Saved trajectories in file.
+2016-10-12 16:12:32,138	findtrajectories.py	INFO	543	Finding trajectories ended on 'mix1/out0022.FFE.png'
+2016-10-12 16:12:32,138	findtrajectories.py	INFO	544	####### Find trajectories end #######
+2016-10-12 16:12:32,788	rendertrajectories.py	INFO	158	####### Render trajectories #######
+2016-10-12 16:12:32,789	rendertrajectories.py	INFO	159	Render trajectories on 'mix1/out0022.FFE.png'
+2016-10-12 16:12:33,260	rendertrajectories.py	INFO	356	Linear rendering of trajectory 1...
+2016-10-12 16:12:33,391	rendertrajectories.py	INFO	391	Saved plot to file mix1/out0022.FFE.result.png.
+2016-10-12 16:12:33,391	rendertrajectories.py	INFO	397	####### Render trajectories end #######
