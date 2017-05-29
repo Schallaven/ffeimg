@@ -1,0 +1,228 @@
+2016-09-12 19:38:54,842	acquire.py	INFO	69	Starting new record session
+2016-09-12 19:38:54,842	acquire.py	INFO	74	Open camera device, apply, and load recording settings
+2016-09-12 19:38:57,453	ffe.py	INFO	145	Camera	Resolution: 640 × 480
+2016-09-12 19:38:57,687	ffe.py	INFO	146	Camera	Brightness: 100
+2016-09-12 19:38:57,703	ffe.py	INFO	147	Camera	Contrast:   100
+2016-09-12 19:38:57,717	ffe.py	INFO	148	Camera	Saturation: 150
+2016-09-12 19:38:57,733	ffe.py	INFO	149	Camera	Sharpness:  150
+2016-09-12 19:38:57,765	ffe.py	INFO	150	Camera	Gain:       6
+2016-09-12 19:38:57,765	ffe.py	INFO	151	Camera	Hue:        13
+2016-09-12 19:38:57,796	ffe.py	INFO	152	Camera	Backlight:  0
+2016-09-12 19:38:57,828	ffe.py	INFO	153	Camera	Exposure:   -9.0
+2016-09-12 19:38:57,828	acquire.py	INFO	96	Camera is working
+2016-09-12 19:38:57,828	ffe.py	INFO	165	Recording channels (green).
+2016-09-12 19:38:57,828	ffe.py	INFO	166	Images will be integrated over 5.0s. Images are not flipped
+2016-09-12 19:38:57,828	ffe.py	INFO	197	Output name: Flow test channel 1
+2016-09-12 19:38:57,828	ffe.py	INFO	198	Output rootdir: E:\Temp
+2016-09-12 19:38:57,828	ffe.py	INFO	199	Output data: Temiska-2
+2016-09-12 19:38:57,828	ffe.py	INFO	200	Output data: 
+2016-09-12 19:38:57,828	ffe.py	INFO	201	Output video: XVID with 12 FPS
+2016-09-12 19:38:57,828	ffe.py	INFO	202	Output a snapshot every 5 frames
+2016-09-12 19:38:57,828	ffe.py	INFO	207	Recording will scale the channels individually.
+2016-09-12 19:38:57,828	ffe.py	INFO	211	Background will not be subtracted from the frames.
+2016-09-12 19:38:57,842	acquire.py	INFO	140	Created folder 'E:\Temp/2016-09-12 19-38 - Flow test channel 1'
+2016-09-12 19:38:57,842	acquire.py	INFO	145	Trying to record background image
+2016-09-12 19:39:07,125	acquire.py	INFO	189	Recorded and saved background image.
+2016-09-12 19:39:07,125	acquire.py	INFO	194	Starting video recorder
+2016-09-12 19:39:07,140	acquire.py	INFO	210	Start recording
+2016-09-12 19:39:12,405	acquire.py	INFO	302	22 frames acquired at 5.3s
+2016-09-12 19:39:12,421	acquire.py	INFO	319	Frame was saved as out0001.FFE.png and in video file
+2016-09-12 19:39:17,530	acquire.py	INFO	302	42 frames acquired at 10.4s
+2016-09-12 19:39:17,546	acquire.py	INFO	319	Frame was saved as out0002.FFE.png and in video file
+2016-09-12 19:39:22,671	acquire.py	INFO	302	62 frames acquired at 15.5s
+2016-09-12 19:39:22,687	acquire.py	INFO	319	Frame was saved as out0003.FFE.png and in video file
+2016-09-12 19:39:27,780	acquire.py	INFO	302	82 frames acquired at 20.6s
+2016-09-12 19:39:27,812	acquire.py	INFO	319	Frame was saved as out0004.FFE.png and in video file
+2016-09-12 19:39:32,921	acquire.py	INFO	302	102 frames acquired at 25.8s
+2016-09-12 19:39:32,937	acquire.py	INFO	319	Frame was saved as out0005.FFE.png and in video file
+2016-09-12 19:39:38,046	acquire.py	INFO	302	122 frames acquired at 30.9s
+2016-09-12 19:39:38,062	acquire.py	INFO	319	Frame was saved as out0006.FFE.png and in video file
+2016-09-12 19:39:43,171	acquire.py	INFO	302	142 frames acquired at 36.0s
+2016-09-12 19:39:43,203	acquire.py	INFO	319	Frame was saved as out0007.FFE.png and in video file
+2016-09-12 19:39:48,296	acquire.py	INFO	302	162 frames acquired at 41.2s
+2016-09-12 19:39:48,312	acquire.py	INFO	319	Frame was saved as out0008.FFE.png and in video file
+2016-09-12 19:39:53,421	acquire.py	INFO	302	182 frames acquired at 46.3s
+2016-09-12 19:39:53,437	acquire.py	INFO	319	Frame was saved as out0009.FFE.png and in video file
+2016-09-12 19:39:58,562	acquire.py	INFO	302	202 frames acquired at 51.4s
+2016-09-12 19:39:58,578	acquire.py	INFO	319	Frame was saved as out0010.FFE.png and in video file
+2016-09-12 19:40:03,671	acquire.py	INFO	302	222 frames acquired at 56.5s
+2016-09-12 19:40:03,687	acquire.py	INFO	319	Frame was saved as out0011.FFE.png and in video file
+2016-09-12 19:40:08,812	acquire.py	INFO	302	242 frames acquired at 61.7s
+2016-09-12 19:40:08,828	acquire.py	INFO	319	Frame was saved as out0012.FFE.png and in video file
+2016-09-12 19:40:13,937	acquire.py	INFO	302	262 frames acquired at 66.8s
+2016-09-12 19:40:13,953	acquire.py	INFO	319	Frame was saved as out0013.FFE.png and in video file
+2016-09-12 19:40:19,062	acquire.py	INFO	302	282 frames acquired at 71.9s
+2016-09-12 19:40:19,078	acquire.py	INFO	319	Frame was saved as out0014.FFE.png and in video file
+2016-09-12 19:40:24,187	acquire.py	INFO	302	302 frames acquired at 77.0s
+2016-09-12 19:40:24,203	acquire.py	INFO	319	Frame was saved as out0015.FFE.png and in video file
+2016-09-12 19:40:29,312	acquire.py	INFO	302	322 frames acquired at 82.2s
+2016-09-12 19:40:29,328	acquire.py	INFO	319	Frame was saved as out0016.FFE.png and in video file
+2016-09-12 19:40:34,437	acquire.py	INFO	302	342 frames acquired at 87.3s
+2016-09-12 19:40:34,467	acquire.py	INFO	319	Frame was saved as out0017.FFE.png and in video file
+2016-09-12 19:40:39,562	acquire.py	INFO	302	362 frames acquired at 92.4s
+2016-09-12 19:40:39,578	acquire.py	INFO	319	Frame was saved as out0018.FFE.png and in video file
+2016-09-12 19:40:44,703	acquire.py	INFO	302	382 frames acquired at 97.6s
+2016-09-12 19:40:44,717	acquire.py	INFO	319	Frame was saved as out0019.FFE.png and in video file
+2016-09-12 19:40:49,828	acquire.py	INFO	302	402 frames acquired at 102.7s
+2016-09-12 19:40:49,842	acquire.py	INFO	319	Frame was saved as out0020.FFE.png and in video file
+2016-09-12 19:40:54,953	acquire.py	INFO	302	422 frames acquired at 107.8s
+2016-09-12 19:40:54,967	acquire.py	INFO	319	Frame was saved as out0021.FFE.png and in video file
+2016-09-12 19:41:00,078	acquire.py	INFO	302	442 frames acquired at 112.9s
+2016-09-12 19:41:00,092	acquire.py	INFO	319	Frame was saved as out0022.FFE.png and in video file
+2016-09-12 19:41:05,217	acquire.py	INFO	302	462 frames acquired at 118.1s
+2016-09-12 19:41:05,233	acquire.py	INFO	319	Frame was saved as out0023.FFE.png and in video file
+2016-09-12 19:41:10,328	acquire.py	INFO	302	482 frames acquired at 123.2s
+2016-09-12 19:41:10,342	acquire.py	INFO	319	Frame was saved as out0024.FFE.png and in video file
+2016-09-12 19:41:15,453	acquire.py	INFO	302	502 frames acquired at 128.3s
+2016-09-12 19:41:15,483	acquire.py	INFO	319	Frame was saved as out0025.FFE.png and in video file
+2016-09-12 19:41:20,592	acquire.py	INFO	302	522 frames acquired at 133.4s
+2016-09-12 19:41:20,608	acquire.py	INFO	319	Frame was saved as out0026.FFE.png and in video file
+2016-09-12 19:41:25,703	acquire.py	INFO	302	542 frames acquired at 138.6s
+2016-09-12 19:41:25,717	acquire.py	INFO	319	Frame was saved as out0027.FFE.png and in video file
+2016-09-12 19:41:30,842	acquire.py	INFO	302	562 frames acquired at 143.7s
+2016-09-12 19:41:30,875	acquire.py	INFO	319	Frame was saved as out0028.FFE.png and in video file
+2016-09-12 19:41:35,967	acquire.py	INFO	302	582 frames acquired at 148.8s
+2016-09-12 19:41:35,983	acquire.py	INFO	319	Frame was saved as out0029.FFE.png and in video file
+2016-09-12 19:41:41,092	acquire.py	INFO	302	602 frames acquired at 154.0s
+2016-09-12 19:41:41,125	acquire.py	INFO	319	Frame was saved as out0030.FFE.png and in video file
+2016-09-12 19:41:46,217	acquire.py	INFO	302	622 frames acquired at 159.1s
+2016-09-12 19:41:46,250	acquire.py	INFO	319	Frame was saved as out0031.FFE.png and in video file
+2016-09-12 19:41:51,342	acquire.py	INFO	302	642 frames acquired at 164.2s
+2016-09-12 19:41:51,358	acquire.py	INFO	319	Frame was saved as out0032.FFE.png and in video file
+2016-09-12 19:41:56,483	acquire.py	INFO	302	662 frames acquired at 169.3s
+2016-09-12 19:41:56,483	acquire.py	INFO	319	Frame was saved as out0033.FFE.png and in video file
+2016-09-12 19:42:01,592	acquire.py	INFO	302	682 frames acquired at 174.5s
+2016-09-12 19:42:01,625	acquire.py	INFO	319	Frame was saved as out0034.FFE.png and in video file
+2016-09-12 19:42:06,733	acquire.py	INFO	302	702 frames acquired at 179.6s
+2016-09-12 19:42:06,750	acquire.py	INFO	319	Frame was saved as out0035.FFE.png and in video file
+2016-09-12 19:42:11,858	acquire.py	INFO	302	722 frames acquired at 184.7s
+2016-09-12 19:42:11,858	acquire.py	INFO	319	Frame was saved as out0036.FFE.png and in video file
+2016-09-12 19:42:16,983	acquire.py	INFO	302	742 frames acquired at 189.8s
+2016-09-12 19:42:17,015	acquire.py	INFO	319	Frame was saved as out0037.FFE.png and in video file
+2016-09-12 19:42:22,108	acquire.py	INFO	302	762 frames acquired at 195.0s
+2016-09-12 19:42:22,125	acquire.py	INFO	319	Frame was saved as out0038.FFE.png and in video file
+2016-09-12 19:42:27,233	acquire.py	INFO	302	782 frames acquired at 200.1s
+2016-09-12 19:42:27,250	acquire.py	INFO	319	Frame was saved as out0039.FFE.png and in video file
+2016-09-12 19:42:32,358	acquire.py	INFO	302	802 frames acquired at 205.2s
+2016-09-12 19:42:32,390	acquire.py	INFO	319	Frame was saved as out0040.FFE.png and in video file
+2016-09-12 19:42:37,483	acquire.py	INFO	302	822 frames acquired at 210.3s
+2016-09-12 19:42:37,500	acquire.py	INFO	319	Frame was saved as out0041.FFE.png and in video file
+2016-09-12 19:42:42,625	acquire.py	INFO	302	842 frames acquired at 215.5s
+2016-09-12 19:42:42,640	acquire.py	INFO	319	Frame was saved as out0042.FFE.png and in video file
+2016-09-12 19:42:47,750	acquire.py	INFO	302	862 frames acquired at 220.6s
+2016-09-12 19:42:47,765	acquire.py	INFO	319	Frame was saved as out0043.FFE.png and in video file
+2016-09-12 19:42:52,875	acquire.py	INFO	302	882 frames acquired at 225.7s
+2016-09-12 19:42:52,890	acquire.py	INFO	319	Frame was saved as out0044.FFE.png and in video file
+2016-09-12 19:42:58,000	acquire.py	INFO	302	902 frames acquired at 230.8s
+2016-09-12 19:42:58,015	acquire.py	INFO	319	Frame was saved as out0045.FFE.png and in video file
+2016-09-12 19:43:03,140	acquire.py	INFO	302	922 frames acquired at 236.0s
+2016-09-12 19:43:03,155	acquire.py	INFO	319	Frame was saved as out0046.FFE.png and in video file
+2016-09-12 19:43:08,250	acquire.py	INFO	302	942 frames acquired at 241.1s
+2016-09-12 19:43:08,280	acquire.py	INFO	319	Frame was saved as out0047.FFE.png and in video file
+2016-09-12 19:43:13,375	acquire.py	INFO	302	962 frames acquired at 246.2s
+2016-09-12 19:43:13,390	acquire.py	INFO	319	Frame was saved as out0048.FFE.png and in video file
+2016-09-12 19:43:18,515	acquire.py	INFO	302	982 frames acquired at 251.4s
+2016-09-12 19:43:18,546	acquire.py	INFO	319	Frame was saved as out0049.FFE.png and in video file
+2016-09-12 19:43:23,625	acquire.py	INFO	302	1002 frames acquired at 256.5s
+2016-09-12 19:43:23,655	acquire.py	INFO	319	Frame was saved as out0050.FFE.png and in video file
+2016-09-12 19:43:28,765	acquire.py	INFO	302	1022 frames acquired at 261.6s
+2016-09-12 19:43:28,780	acquire.py	INFO	319	Frame was saved as out0051.FFE.png and in video file
+2016-09-12 19:43:33,890	acquire.py	INFO	302	1042 frames acquired at 266.7s
+2016-09-12 19:43:33,921	acquire.py	INFO	319	Frame was saved as out0052.FFE.png and in video file
+2016-09-12 19:43:39,030	acquire.py	INFO	302	1062 frames acquired at 271.9s
+2016-09-12 19:43:39,046	acquire.py	INFO	319	Frame was saved as out0053.FFE.png and in video file
+2016-09-12 19:43:44,140	acquire.py	INFO	302	1082 frames acquired at 277.0s
+2016-09-12 19:43:44,155	acquire.py	INFO	319	Frame was saved as out0054.FFE.png and in video file
+2016-09-12 19:43:49,265	acquire.py	INFO	302	1102 frames acquired at 282.1s
+2016-09-12 19:43:49,296	acquire.py	INFO	319	Frame was saved as out0055.FFE.png and in video file
+2016-09-12 19:43:54,390	acquire.py	INFO	302	1122 frames acquired at 287.2s
+2016-09-12 19:43:54,421	acquire.py	INFO	319	Frame was saved as out0056.FFE.png and in video file
+2016-09-12 19:43:59,515	acquire.py	INFO	302	1142 frames acquired at 292.4s
+2016-09-12 19:43:59,530	acquire.py	INFO	319	Frame was saved as out0057.FFE.png and in video file
+2016-09-12 19:44:04,655	acquire.py	INFO	302	1162 frames acquired at 297.5s
+2016-09-12 19:44:04,687	acquire.py	INFO	319	Frame was saved as out0058.FFE.png and in video file
+2016-09-12 19:44:09,780	acquire.py	INFO	302	1182 frames acquired at 302.6s
+2016-09-12 19:44:09,796	acquire.py	INFO	319	Frame was saved as out0059.FFE.png and in video file
+2016-09-12 19:44:14,905	acquire.py	INFO	302	1202 frames acquired at 307.8s
+2016-09-12 19:44:14,921	acquire.py	INFO	319	Frame was saved as out0060.FFE.png and in video file
+2016-09-12 19:44:20,030	acquire.py	INFO	302	1222 frames acquired at 312.9s
+2016-09-12 19:44:20,062	acquire.py	INFO	319	Frame was saved as out0061.FFE.png and in video file
+2016-09-12 19:44:25,171	acquire.py	INFO	302	1242 frames acquired at 318.0s
+2016-09-12 19:44:25,187	acquire.py	INFO	319	Frame was saved as out0062.FFE.png and in video file
+2016-09-12 19:44:30,280	acquire.py	INFO	302	1262 frames acquired at 323.1s
+2016-09-12 19:44:30,296	acquire.py	INFO	319	Frame was saved as out0063.FFE.png and in video file
+2016-09-12 19:44:35,405	acquire.py	INFO	302	1282 frames acquired at 328.3s
+2016-09-12 19:44:35,437	acquire.py	INFO	319	Frame was saved as out0064.FFE.png and in video file
+2016-09-12 19:44:40,546	acquire.py	INFO	302	1302 frames acquired at 333.4s
+2016-09-12 19:44:40,562	acquire.py	INFO	319	Frame was saved as out0065.FFE.png and in video file
+2016-09-12 19:44:45,671	acquire.py	INFO	302	1322 frames acquired at 338.5s
+2016-09-12 19:44:45,671	acquire.py	INFO	319	Frame was saved as out0066.FFE.png and in video file
+2016-09-12 19:44:50,796	acquire.py	INFO	302	1342 frames acquired at 343.7s
+2016-09-12 19:44:50,828	acquire.py	INFO	319	Frame was saved as out0067.FFE.png and in video file
+2016-09-12 19:44:55,921	acquire.py	INFO	302	1362 frames acquired at 348.8s
+2016-09-12 19:44:55,937	acquire.py	INFO	319	Frame was saved as out0068.FFE.png and in video file
+2016-09-12 19:45:01,062	acquire.py	INFO	302	1382 frames acquired at 353.9s
+2016-09-12 19:45:01,078	acquire.py	INFO	319	Frame was saved as out0069.FFE.png and in video file
+2016-09-12 19:45:06,171	acquire.py	INFO	302	1402 frames acquired at 359.0s
+2016-09-12 19:45:06,203	acquire.py	INFO	319	Frame was saved as out0070.FFE.png and in video file
+2016-09-12 19:45:11,296	acquire.py	INFO	302	1422 frames acquired at 364.1s
+2016-09-12 19:45:11,312	acquire.py	INFO	319	Frame was saved as out0071.FFE.png and in video file
+2016-09-12 19:45:16,437	acquire.py	INFO	302	1442 frames acquired at 369.3s
+2016-09-12 19:45:16,453	acquire.py	INFO	319	Frame was saved as out0072.FFE.png and in video file
+2016-09-12 19:45:21,562	acquire.py	INFO	302	1462 frames acquired at 374.4s
+2016-09-12 19:45:21,592	acquire.py	INFO	319	Frame was saved as out0073.FFE.png and in video file
+2016-09-12 19:45:26,687	acquire.py	INFO	302	1482 frames acquired at 379.5s
+2016-09-12 19:45:26,717	acquire.py	INFO	319	Frame was saved as out0074.FFE.png and in video file
+2016-09-12 19:45:31,812	acquire.py	INFO	302	1502 frames acquired at 384.7s
+2016-09-12 19:45:31,828	acquire.py	INFO	319	Frame was saved as out0075.FFE.png and in video file
+2016-09-12 19:45:36,953	acquire.py	INFO	302	1522 frames acquired at 389.8s
+2016-09-12 19:45:36,967	acquire.py	INFO	319	Frame was saved as out0076.FFE.png and in video file
+2016-09-12 19:45:42,062	acquire.py	INFO	302	1542 frames acquired at 394.9s
+2016-09-12 19:45:42,078	acquire.py	INFO	319	Frame was saved as out0077.FFE.png and in video file
+2016-09-12 19:45:47,187	acquire.py	INFO	302	1562 frames acquired at 400.0s
+2016-09-12 19:45:47,203	acquire.py	INFO	319	Frame was saved as out0078.FFE.png and in video file
+2016-09-12 19:45:52,328	acquire.py	INFO	302	1582 frames acquired at 405.2s
+2016-09-12 19:45:52,342	acquire.py	INFO	319	Frame was saved as out0079.FFE.png and in video file
+2016-09-12 19:45:57,437	acquire.py	INFO	302	1602 frames acquired at 410.3s
+2016-09-12 19:45:57,453	acquire.py	INFO	319	Frame was saved as out0080.FFE.png and in video file
+2016-09-12 19:46:02,578	acquire.py	INFO	302	1622 frames acquired at 415.4s
+2016-09-12 19:46:02,592	acquire.py	INFO	319	Frame was saved as out0081.FFE.png and in video file
+2016-09-12 19:46:07,703	acquire.py	INFO	302	1642 frames acquired at 420.5s
+2016-09-12 19:46:07,717	acquire.py	INFO	319	Frame was saved as out0082.FFE.png and in video file
+2016-09-12 19:46:12,828	acquire.py	INFO	302	1662 frames acquired at 425.7s
+2016-09-12 19:46:12,842	acquire.py	INFO	319	Frame was saved as out0083.FFE.png and in video file
+2016-09-12 19:46:17,953	acquire.py	INFO	302	1682 frames acquired at 430.8s
+2016-09-12 19:46:17,967	acquire.py	INFO	319	Frame was saved as out0084.FFE.png and in video file
+2016-09-12 19:46:23,092	acquire.py	INFO	302	1702 frames acquired at 435.9s
+2016-09-12 19:46:23,108	acquire.py	INFO	319	Frame was saved as out0085.FFE.png and in video file
+2016-09-12 19:46:28,203	acquire.py	INFO	302	1722 frames acquired at 441.1s
+2016-09-12 19:46:28,233	acquire.py	INFO	319	Frame was saved as out0086.FFE.png and in video file
+2016-09-12 19:46:33,328	acquire.py	INFO	302	1742 frames acquired at 446.2s
+2016-09-12 19:46:33,342	acquire.py	INFO	319	Frame was saved as out0087.FFE.png and in video file
+2016-09-12 19:46:38,467	acquire.py	INFO	302	1762 frames acquired at 451.3s
+2016-09-12 19:46:38,500	acquire.py	INFO	319	Frame was saved as out0088.FFE.png and in video file
+2016-09-12 19:46:43,592	acquire.py	INFO	302	1782 frames acquired at 456.4s
+2016-09-12 19:46:43,608	acquire.py	INFO	319	Frame was saved as out0089.FFE.png and in video file
+2016-09-12 19:46:48,717	acquire.py	INFO	302	1802 frames acquired at 461.6s
+2016-09-12 19:46:48,733	acquire.py	INFO	319	Frame was saved as out0090.FFE.png and in video file
+2016-09-12 19:46:53,842	acquire.py	INFO	302	1822 frames acquired at 466.7s
+2016-09-12 19:46:53,875	acquire.py	INFO	319	Frame was saved as out0091.FFE.png and in video file
+2016-09-12 19:46:58,983	acquire.py	INFO	302	1842 frames acquired at 471.8s
+2016-09-12 19:46:59,000	acquire.py	INFO	319	Frame was saved as out0092.FFE.png and in video file
+2016-09-12 19:47:04,092	acquire.py	INFO	302	1862 frames acquired at 476.9s
+2016-09-12 19:47:04,108	acquire.py	INFO	319	Frame was saved as out0093.FFE.png and in video file
+2016-09-12 19:47:09,217	acquire.py	INFO	302	1882 frames acquired at 482.1s
+2016-09-12 19:47:09,233	acquire.py	INFO	319	Frame was saved as out0094.FFE.png and in video file
+2016-09-12 19:47:14,358	acquire.py	INFO	302	1902 frames acquired at 487.2s
+2016-09-12 19:47:14,375	acquire.py	INFO	319	Frame was saved as out0095.FFE.png and in video file
+2016-09-12 19:47:19,467	acquire.py	INFO	302	1922 frames acquired at 492.3s
+2016-09-12 19:47:19,483	acquire.py	INFO	319	Frame was saved as out0096.FFE.png and in video file
+2016-09-12 19:47:24,608	acquire.py	INFO	302	1942 frames acquired at 497.5s
+2016-09-12 19:47:24,640	acquire.py	INFO	319	Frame was saved as out0097.FFE.png and in video file
+2016-09-12 19:47:29,733	acquire.py	INFO	302	1962 frames acquired at 502.6s
+2016-09-12 19:47:29,750	acquire.py	INFO	319	Frame was saved as out0098.FFE.png and in video file
+2016-09-12 19:47:34,858	acquire.py	INFO	302	1982 frames acquired at 507.7s
+2016-09-12 19:47:34,875	acquire.py	INFO	319	Frame was saved as out0099.FFE.png and in video file
+2016-09-12 19:47:39,983	acquire.py	INFO	302	2002 frames acquired at 512.8s
+2016-09-12 19:47:40,015	acquire.py	INFO	319	Frame was saved as out0100.FFE.png and in video file
+2016-09-12 19:47:41,092	acquire.py	INFO	356	Recording session ended
