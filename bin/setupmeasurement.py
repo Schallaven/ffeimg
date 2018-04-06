@@ -225,7 +225,7 @@ class MyDialog(wx.Dialog):
         Config.set("Output", "combinechannels", int(self.check_individualchannels.IsChecked()))
         Config.set("Output", "scaleindividually", int(self.check_scaleindividually.IsChecked()))
         Config.set("Output", "ignorebackground", int(self.check_ignorebackground.IsChecked()))
-        with open("Output.ini", "w") as fp:
+        with open("output.ini", "w") as fp:
             Config.write(fp)
         self.Close()
         event.Skip()

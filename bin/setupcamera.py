@@ -30,6 +30,7 @@ import cv2              # OpenCV
 import numpy as np      # Numpy - You always need this.
 import ConfigParser     # Reading/Writing config files
 import time             # Time functions
+import ffe              # Mainly for the getCameraID() function
 
 # Main dialog
 class MyDialog(wx.Dialog):
@@ -244,11 +245,11 @@ class MyDialog(wx.Dialog):
         # -----------------------------------------------
 
         # Initialize camera
-        self.cam = cv2.VideoCapture(0)
+        self.cam = cv2.VideoCapture(ffe.getCameraID())
 
-        # Get initial width and height
-        self.framewidth = self.cam.get(cv2.CAP_PROP_FRAME_WIDTH)
-        self.frameheight = self.cam.get(cv2.CAP_PROP_FRAME_HEIGHT)
+        # Get initial width and height; convert to int because some implementations return floats (e.g. 640.0 x 480.0)
+        self.framewidth = int(self.cam.get(cv2.CAP_PROP_FRAME_WIDTH))
+        self.frameheight = int(self.cam.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
         # Try to get very first frame from camera
         ret, img = self.cam.read()

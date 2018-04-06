@@ -142,7 +142,7 @@ class MyDialog(wx.Dialog):
         # -----------------------------------------------
 
         # Initialize camera
-        self.cam = cv2.VideoCapture(0)
+        self.cam = cv2.VideoCapture(ffe.getCameraID())
 
         # Apply camera settings; load recording settings
         self.camsettings = ffe.applyCameraSettings(self.cam)
@@ -150,8 +150,8 @@ class MyDialog(wx.Dialog):
         ffe.dumpCameraPropsToConsole(self.cam)
 
         # Get camera width and height
-        self.framewidth = self.cam.get(cv2.CAP_PROP_FRAME_WIDTH)
-        self.frameheight = self.cam.get(cv2.CAP_PROP_FRAME_HEIGHT)
+        self.framewidth = int(self.cam.get(cv2.CAP_PROP_FRAME_WIDTH))
+        self.frameheight = int(self.cam.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
         # Try to get very first frame from camera
         ret, image = self.cam.read()

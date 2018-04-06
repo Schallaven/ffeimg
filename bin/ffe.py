@@ -90,6 +90,7 @@ import copy                         # Make 1:1 copies of whole objects (numpy/op
 import heapq                        # Fast implementation of a priority queue
 import time                         # Time functions
 import warnings                     # Scipy module and some others use this for generating warnings
+import os                           # Some operating system functions
 
 
 # Create but do not configure logger
@@ -120,6 +121,25 @@ def disableDebugMode():
     debugmode = False
 
 
+# Function: Returns the camera ID from 'hardware.ini' or zero if not found.
+def getCameraID():
+    """Get the camera ID. Unfortunately OpenCV has no means at the moment to get a list of camera devices and/or IDs
+    to make this process more comfortable. For now, the user provides the ID by a file 'hardware.ini'. If not found zero is
+    used as standard ID.
+    """
+
+    # Default ID = 0
+    camid = 0
+
+    # Does 'hardware.ini' exist (in the current diectory)
+    if os.path.isfile('hardware.ini'):
+        # Read the content of that file and convert it to an integer
+        with open('hardware.ini', 'r') as hardwarefile:
+            camid = int(hardwarefile.read())
+
+    # Returns a usable camera id (=> 0)
+    return abs(camid)
+
 # Function: Read and apply the camera settings; returns a dictionary for the recording settings
 def applyCameraSettings(camera):
     """Read and apply the camera settings from `camera.ini`. `camera` is a camera object from `OpenCV`
@@ -132,16 +152,16 @@ def applyCameraSettings(camera):
     # Apply general camera settings
     if Config.has_section("Camera"):
         # General settings
-        camera.set(cv2.CAP_PROP_BRIGHTNESS, Config.getint("Camera", "Brightness"))  # 0-255
-        camera.set(cv2.CAP_PROP_CONTRAST, Config.getint("Camera", "Contrast"))  # 0-255
-        camera.set(cv2.CAP_PROP_SATURATION, Config.getint("Camera", "Saturation"))  # 0-255
-        camera.set(cv2.CAP_PROP_SHARPNESS, Config.getint("Camera", "Sharpness"))  # 0-255
-        camera.set(cv2.CAP_PROP_GAIN, Config.getint("Camera", "Gain"))  # 0-100
-        camera.set(cv2.CAP_PROP_HUE, Config.getint("Camera", "Hue"))  # fixed on 13?
-        camera.set(cv2.CAP_PROP_BACKLIGHT, Config.getint("Camera", "Backlight"))
+        camera.set(cv2.CAP_PROP_BRIGHTNESS, Config.getfloat("Camera", "Brightness"))  # 0-255
+        camera.set(cv2.CAP_PROP_CONTRAST, Config.getfloat("Camera", "Contrast"))  # 0-255
+        camera.set(cv2.CAP_PROP_SATURATION, Config.getfloat("Camera", "Saturation"))  # 0-255
+        camera.set(cv2.CAP_PROP_SHARPNESS, Config.getfloat("Camera", "Sharpness"))  # 0-255
+        camera.set(cv2.CAP_PROP_GAIN, Config.getfloat("Camera", "Gain"))  # 0-100
+        camera.set(cv2.CAP_PROP_HUE, Config.getfloat("Camera", "Hue"))  # fixed on 13?
+        camera.set(cv2.CAP_PROP_BACKLIGHT, Config.getfloat("Camera", "Backlight"))
         # Frame size
-        camera.set(cv2.CAP_PROP_FRAME_WIDTH, Config.getint("Camera", "Framewidth"))
-        camera.set(cv2.CAP_PROP_FRAME_HEIGHT, Config.getint("Camera", "Frameheight"))
+        camera.set(cv2.CAP_PROP_FRAME_WIDTH, Config.getfloat("Camera", "Framewidth"))
+        camera.set(cv2.CAP_PROP_FRAME_HEIGHT, Config.getfloat("Camera", "Frameheight"))
         # Exposure
         camera.set(cv2.CAP_PROP_EXPOSURE, Config.getfloat("Camera", "Exposure"))
 
@@ -173,14 +193,14 @@ def dumpCameraPropsToConsole(camera):
     """Simply dumps camera properties to the console. It is meant mainly for debug purposes, in case no logger is
     available. `camera` is a camera object from `OpenCV` (`cv2.VideoCapture()`).
     """
-    print(u"Width x Height: %d x %d" % (camera.get(cv2.CAP_PROP_FRAME_WIDTH),camera.get(cv2.CAP_PROP_FRAME_HEIGHT)))
-    print(u"Brightness: %d" % camera.get(cv2.CAP_PROP_BRIGHTNESS))
-    print(u"Contrast: %d" % camera.get(cv2.CAP_PROP_CONTRAST))
-    print(u"Saturation: %d" % camera.get(cv2.CAP_PROP_SATURATION))
-    print(u"Sharpness: %d" % camera.get(cv2.CAP_PROP_SHARPNESS))
-    print(u"Gain: %d" % camera.get(cv2.CAP_PROP_GAIN))
-    print(u"Hue: %d" % camera.get(cv2.CAP_PROP_HUE))
-    print(u"Backlight: %d" % camera.get(cv2.CAP_PROP_BACKLIGHT))
+    print(u"Width x Height: %.1f x %.1f" % (camera.get(cv2.CAP_PROP_FRAME_WIDTH),camera.get(cv2.CAP_PROP_FRAME_HEIGHT)))
+    print(u"Brightness: %.1f" % camera.get(cv2.CAP_PROP_BRIGHTNESS))
+    print(u"Contrast: %.1f" % camera.get(cv2.CAP_PROP_CONTRAST))
+    print(u"Saturation: %.1f" % camera.get(cv2.CAP_PROP_SATURATION))
+    print(u"Sharpness: %.1f" % camera.get(cv2.CAP_PROP_SHARPNESS))
+    print(u"Gain: %.1f" % camera.get(cv2.CAP_PROP_GAIN))
+    print(u"Hue: %.1f" % camera.get(cv2.CAP_PROP_HUE))
+    print(u"Backlight: %.1f" % camera.get(cv2.CAP_PROP_BACKLIGHT))
     print(u"Exposure: %.1f" % (camera.get(cv2.CAP_PROP_EXPOSURE)))
 
 
@@ -188,14 +208,14 @@ def dumpCameraPropsToConsole(camera):
 def logCameraProps(camera):
     """Logs all camera settings to a logger (`FFE`). `camera` is a camera object from `OpenCV` (`cv2.VideoCapture()`).
     """
-    logger.info(u"Camera\tResolution: %d × %d",camera.get(cv2.CAP_PROP_FRAME_WIDTH),camera.get(cv2.CAP_PROP_FRAME_HEIGHT) )
-    logger.info(u"Camera\tBrightness: %d", camera.get(cv2.CAP_PROP_BRIGHTNESS))
-    logger.info(u"Camera\tContrast:   %d", camera.get(cv2.CAP_PROP_CONTRAST))
-    logger.info(u"Camera\tSaturation: %d", camera.get(cv2.CAP_PROP_SATURATION))
-    logger.info(u"Camera\tSharpness:  %d", camera.get(cv2.CAP_PROP_SHARPNESS))
-    logger.info(u"Camera\tGain:       %d", camera.get(cv2.CAP_PROP_GAIN))
-    logger.info(u"Camera\tHue:        %d", camera.get(cv2.CAP_PROP_HUE))
-    logger.info(u"Camera\tBacklight:  %d", camera.get(cv2.CAP_PROP_BACKLIGHT))
+    logger.info(u"Camera\tResolution: %.1f × %.1f",camera.get(cv2.CAP_PROP_FRAME_WIDTH),camera.get(cv2.CAP_PROP_FRAME_HEIGHT) )
+    logger.info(u"Camera\tBrightness: %.1f", camera.get(cv2.CAP_PROP_BRIGHTNESS))
+    logger.info(u"Camera\tContrast:   %.1f", camera.get(cv2.CAP_PROP_CONTRAST))
+    logger.info(u"Camera\tSaturation: %.1f", camera.get(cv2.CAP_PROP_SATURATION))
+    logger.info(u"Camera\tSharpness:  %.1f", camera.get(cv2.CAP_PROP_SHARPNESS))
+    logger.info(u"Camera\tGain:       %.1f", camera.get(cv2.CAP_PROP_GAIN))
+    logger.info(u"Camera\tHue:        %.1f", camera.get(cv2.CAP_PROP_HUE))
+    logger.info(u"Camera\tBacklight:  %.1f", camera.get(cv2.CAP_PROP_BACKLIGHT))
     logger.info(u"Camera\tExposure:   %.1f", (camera.get(cv2.CAP_PROP_EXPOSURE)))
 
 

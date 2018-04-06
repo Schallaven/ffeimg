@@ -67,8 +67,13 @@ logger.info(u"Starting new record session")
 # Step 1: Open camera, read and apply camera settings, try to read one frame to see if it is working
 # --------------------------------------------------------------------------------------------------------------------
 logger.info(u"Open camera device, apply, and load recording settings")
+
+# Log and save camera ID
+cameraid = ffe.getCameraID()
+logger.info(u"Camera ID used: %d", cameraid)
+
 # Open camera device
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture(cameraid)
 
 # Apply camera settings; load recording settings
 camera_settings = ffe.applyCameraSettings(camera)
