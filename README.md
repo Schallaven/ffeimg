@@ -1,5 +1,7 @@
 # Image processing and analysis system for development and use of free flow electrophoresis chips
 
+Cite it: [![DOI](https://zenodo.org/badge/92550620.svg)](https://zenodo.org/badge/latestdoi/92550620)
+
 ## Introduction
 
 This image processing and analysis system is designed to facilitate detailed performance analysis of free flow electrophoresis (FFE) chips. It consists of a comprehensive customizable software suite which complement the self-built hardware (see paper below). All components were designed modularly to be accessible, adaptable, versatile, and automatable. 
