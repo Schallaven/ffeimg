@@ -237,6 +237,10 @@ while True:
     # Read a frame from the camera
     ret, frame = camera.read()
 
+	# Flipping?
+    if camera_settings["doflipping"]:
+        frame = cv2.flip(frame, camera_settings["flip"])
+ 
     # Remove background from image
     if int(output_settings["ignorebackground"]) == 0:
         frame = cv2.subtract(frame, background)
